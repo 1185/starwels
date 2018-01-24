@@ -1,5 +1,5 @@
 ---
-name: "bitcoin-win-0.15"
+name: "starwels-win-0.15"
 enable_cache: true
 suites:
 - "trusty"
@@ -22,8 +22,8 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/bitcoin/bitcoin.git"
-  "dir": "bitcoin"
+- "url": "https://github.com/starwels/starwels.git"
+  "dir": "starwels"
 files: []
 script: |
   WRAP_DIR=$HOME/wrapped
@@ -101,7 +101,7 @@ script: |
   create_per-host_linker_wrapper "2000-01-01 12:00:00"
   export PATH=${WRAP_DIR}:${PATH}
 
-  cd bitcoin
+  cd starwels
   BASEPREFIX=`pwd`/depends
   # Build dependencies for each host
   for i in $HOSTS; do
@@ -119,14 +119,15 @@ script: |
   ./autogen.sh
   CONFIG_SITE=${BASEPREFIX}/`echo "${HOSTS}" | awk '{print $1;}'`/share/config.site ./configure --prefix=/
   make dist
-  SOURCEDIST=`echo bitcoin-*.tar.gz`
+  SOURCEDIST=`echo starwels-*.tar.gz`
   DISTNAME=`echo ${SOURCEDIST} | sed 's/.tar.*//'`
+  DISTDR=`echo starwels-*`
 
   # Correct tar file order
   mkdir -p temp
   pushd temp
   tar xf ../$SOURCEDIST
-  find bitcoin-* | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ../$SOURCEDIST
+  find starwels-* | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ../$SOURCEDIST
   mkdir -p $OUTDIR/src
   cp ../$SOURCEDIST $OUTDIR/src
   popd
@@ -140,7 +141,7 @@ script: |
     export PATH=${BASEPREFIX}/${i}/native/bin:${ORIGPATH}
     mkdir -p distsrc-${i}
     cd distsrc-${i}
-    INSTALLPATH=`pwd`/installed/${DISTNAME}
+    INSTALLPATH=`pwd`/installed/${DISTDR}
     mkdir -p ${INSTALLPATH}
     tar --strip-components=1 -xf ../$SOURCEDIST
 
@@ -155,25 +156,25 @@ script: |
     make deploy
     make install DESTDIR=${INSTALLPATH}
     rename 's/-setup\.exe$/-setup-unsigned.exe/' *-setup.exe
-    cp -f bitcoin-*setup*.exe $OUTDIR/
+    cp -f starwels-*setup*.exe $OUTDIR/
     cd installed
-    mv ${DISTNAME}/bin/*.dll ${DISTNAME}/lib/
+    mv ${DISTDR}/bin/*.dll ${DISTDR}/lib/
     find . -name "lib*.la" -delete
     find . -name "lib*.a" -delete
-    rm -rf ${DISTNAME}/lib/pkgconfig
-    find ${DISTNAME}/bin -type f -executable -exec ${i}-objcopy --only-keep-debug {} {}.dbg \; -exec ${i}-strip -s {} \; -exec ${i}-objcopy --add-gnu-debuglink={}.dbg {} \;
-    find ${DISTNAME}/lib -type f -exec ${i}-objcopy --only-keep-debug {} {}.dbg \; -exec ${i}-strip -s {} \; -exec ${i}-objcopy --add-gnu-debuglink={}.dbg {} \;
-    find ${DISTNAME} -not -name "*.dbg"  -type f | sort | zip -X@ ${OUTDIR}/${DISTNAME}-${i}.zip
-    find ${DISTNAME} -name "*.dbg"  -type f | sort | zip -X@ ${OUTDIR}/${DISTNAME}-${i}-debug.zip
+    rm -rf ${DISTDR}/lib/pkgconfig
+    find ${DISTDR}/bin -type f -executable -exec ${i}-objcopy --only-keep-debug {} {}.dbg \; -exec ${i}-strip -s {} \; -exec ${i}-objcopy --add-gnu-debuglink={}.dbg {} \;
+    find ${DISTDR}/lib -type f -exec ${i}-objcopy --only-keep-debug {} {}.dbg \; -exec ${i}-strip -s {} \; -exec ${i}-objcopy --add-gnu-debuglink={}.dbg {} \;
+    find ${DISTDR} -not -name "*.dbg"  -type f | sort | zip -X@ ${OUTDIR}/${DISTDR}-${i}.zip
+    find ${DISTDR} -name "*.dbg"  -type f | sort | zip -X@ ${OUTDIR}/${DISTDR}-${i}-debug.zip
     cd ../../
     rm -rf distsrc-${i}
   done
   cp -rf contrib/windeploy $BUILD_DIR
   cd $BUILD_DIR/windeploy
   mkdir unsigned
-  cp $OUTDIR/bitcoin-*setup-unsigned.exe unsigned/
-  find . | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ${OUTDIR}/${DISTNAME}-win-unsigned.tar.gz
-  mv ${OUTDIR}/${DISTNAME}-x86_64-*-debug.zip ${OUTDIR}/${DISTNAME}-win64-debug.zip
-  mv ${OUTDIR}/${DISTNAME}-i686-*-debug.zip ${OUTDIR}/${DISTNAME}-win32-debug.zip
-  mv ${OUTDIR}/${DISTNAME}-x86_64-*.zip ${OUTDIR}/${DISTNAME}-win64.zip
-  mv ${OUTDIR}/${DISTNAME}-i686-*.zip ${OUTDIR}/${DISTNAME}-win32.zip
+  cp $OUTDIR/starwels-*setup-unsigned.exe unsigned/
+  find . | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ${OUTDIR}/${DISTDR}-win-unsigned.tar.gz
+  mv ${OUTDIR}/${DISTDR}-x86_64-*-debug.zip ${OUTDIR}/${DISTDR}-win64-debug.zip
+  mv ${OUTDIR}/${DISTDR}-i686-*-debug.zip ${OUTDIR}/${DISTDR}-win32-debug.zip
+  mv ${OUTDIR}/${DISTDR}-x86_64-*.zip ${OUTDIR}/${DISTDR}-win64.zip
+  mv ${OUTDIR}/${DISTDR}-i686-*.zip ${OUTDIR}/${DISTDR}-win32.zip

@@ -1,9 +1,9 @@
-// Copyright (c) 2011-2016 The Bitcoin Core developers
+// Copyright (c) 2011-2016 The Starwels developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_OVERVIEWPAGE_H
-#define BITCOIN_QT_OVERVIEWPAGE_H
+#ifndef STARWELS_QT_OVERVIEWPAGE_H
+#define STARWELS_QT_OVERVIEWPAGE_H
 
 #include "amount.h"
 
@@ -67,4 +67,4 @@ private Q_SLOTS:
     void handleOutOfSyncWarningClicks();
 };
 
-#endif // BITCOIN_QT_OVERVIEWPAGE_H
+#endif // STARWELS_QT_OVERVIEWPAGE_H

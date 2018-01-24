@@ -1,6 +1,6 @@
-Bitcoin Core version 0.9.3 is now available from:
+Starwels version 0.9.3 is now available from:
 
-  https://bitcoin.org/bin/0.9.3/
+  <https://github.com/starwels/starwels/releases>
 
 This is a new minor version release, bringing only bug fixes and updated
 translations. Upgrading to this release is recommended.
@@ -17,11 +17,11 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Bitcoin-Qt (on Mac) or
-bitcoind/bitcoin-qt (on Linux).
+installer (on Windows) or just copy over /Applications/Starwels-Qt (on Mac) or
+starwelsd/starwels-qt (on Linux).
 
 If you are upgrading from version 0.7.2 or earlier, the first time you run
-0.9.3 your blockchain files will be re-indexed, which will take anywhere from 
+0.9.3 your blockchain files will be re-indexed, which will take anywhere from
 30 minutes to several hours, depending on the speed of your machine.
 
 Downgrading warnings
@@ -70,7 +70,7 @@ GUI:
 Miscellaneous:
 - key.cpp: fail with a friendlier message on missing ssl EC support
 - Remove bignum dependency for scripts
-- Upgrade OpenSSL to 1.0.1i (see https://www.openssl.org/news/secadv_20140806.txt - just to be sure, no critical issues for Bitcoin Core)
+- Upgrade OpenSSL to 1.0.1i (see https://www.openssl.org/news/secadv_20140806.txt - just to be sure, no critical issues for Starwels)
 - Upgrade miniupnpc to 1.9.20140701
 - Fix boost detection in build system on some platforms
 

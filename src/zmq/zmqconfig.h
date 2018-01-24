@@ -1,12 +1,12 @@
-// Copyright (c) 2014 The Bitcoin Core developers
+// Copyright (c) 2014 The Starwels developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_ZMQ_ZMQCONFIG_H
-#define BITCOIN_ZMQ_ZMQCONFIG_H
+#ifndef STARWELS_ZMQ_ZMQCONFIG_H
+#define STARWELS_ZMQ_ZMQCONFIG_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bitcoin-config.h"
+#include "config/starwels-config.h"
 #endif
 
 #include <stdarg.h>
@@ -21,4 +21,4 @@
 
 void zmqError(const char *str);
 
-#endif // BITCOIN_ZMQ_ZMQCONFIG_H
+#endif // STARWELS_ZMQ_ZMQCONFIG_H

@@ -1,13 +1,13 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2016 The Bitcoin Core developers
+// Copyright (c) 2009-2016 The Starwels developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_VALIDATION_H
-#define BITCOIN_VALIDATION_H
+#ifndef STARWELS_VALIDATION_H
+#define STARWELS_VALIDATION_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bitcoin-config.h"
+#include "config/starwels-config.h"
 #endif
 
 #include "amount.h"
@@ -483,4 +483,4 @@ void DumpMempool();
 /** Load the mempool from disk. */
 bool LoadMempool();
 
-#endif // BITCOIN_VALIDATION_H
+#endif // STARWELS_VALIDATION_H
