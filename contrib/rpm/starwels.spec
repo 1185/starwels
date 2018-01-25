@@ -20,8 +20,8 @@ Summary:	Peer to Peer Cryptographic Currency
 
 Group:		Applications/System
 License:	MIT
-URL:		https://localhost/
-Source0:	https://localhost/bin/starwels-%{version}/starwels-%{version}.tar.gz
+URL:		https://github.com/starwels/
+Source0:	https://github.com/starwels/bin/starwels-%{version}/starwels-%{version}.tar.gz
 Source1:	http://download.oracle.com/berkeley-db/db-%{bdbv}.NC.tar.gz
 
 Source10:	https://raw.githubusercontent.com/starwels/starwels/v%{version}/contrib/debian/examples/starwels.conf
@@ -332,10 +332,10 @@ if [ `%{_sbindir}/sestatus |grep -c "disabled"` -eq 0 ]; then
 for selinuxvariant in %{selinux_variants}; do
 	%{_sbindir}/semodule -s ${selinuxvariant} -i %{_datadir}/selinux/${selinuxvariant}/starwels.pp &> /dev/null || :
 done
-%{_sbindir}/semanage port -a -t starwels_port_t -p tcp 8332
-%{_sbindir}/semanage port -a -t starwels_port_t -p tcp 8333
-%{_sbindir}/semanage port -a -t starwels_port_t -p tcp 18332
-%{_sbindir}/semanage port -a -t starwels_port_t -p tcp 18333
+%{_sbindir}/semanage port -a -t starwels_port_t -p tcp 8352
+%{_sbindir}/semanage port -a -t starwels_port_t -p tcp 8353
+%{_sbindir}/semanage port -a -t starwels_port_t -p tcp 18352
+%{_sbindir}/semanage port -a -t starwels_port_t -p tcp 18353
 %{_sbindir}/fixfiles -R starwels-server restore &> /dev/null || :
 %{_sbindir}/restorecon -R %{_localstatedir}/lib/starwels || :
 fi
@@ -351,10 +351,10 @@ fi
 # SELinux
 if [ $1 -eq 0 ]; then
 	if [ `%{_sbindir}/sestatus |grep -c "disabled"` -eq 0 ]; then
-	%{_sbindir}/semanage port -d -p tcp 8332
-	%{_sbindir}/semanage port -d -p tcp 8333
-	%{_sbindir}/semanage port -d -p tcp 18332
-	%{_sbindir}/semanage port -d -p tcp 18333
+	%{_sbindir}/semanage port -d -p tcp 8352
+	%{_sbindir}/semanage port -d -p tcp 8353
+	%{_sbindir}/semanage port -d -p tcp 18352
+	%{_sbindir}/semanage port -d -p tcp 18353
 	for selinuxvariant in %{selinux_variants}; do
 		%{_sbindir}/semodule -s ${selinuxvariant} -r starwels &> /dev/null || :
 	done

@@ -142,10 +142,10 @@ unauthenticated access to public node data.
 It is served on the same port as RPC, but does not need a password, and uses
 plain HTTP instead of JSON-RPC.
 
-Assuming a local RPC server running on port 8332, it is possible to request:
-- Blocks: http://localhost:8332/rest/block/*HASH*.*EXT*
-- Blocks without transactions: http://localhost:8332/rest/block/notxdetails/*HASH*.*EXT*
-- Transactions (requires `-txindex`): http://localhost:8332/rest/tx/*HASH*.*EXT*
+Assuming a local RPC server running on port 8352, it is possible to request:
+- Blocks: http://localhost:8352/rest/block/*HASH*.*EXT*
+- Blocks without transactions: http://localhost:8352/rest/block/notxdetails/*HASH*.*EXT*
+- Transactions (requires `-txindex`): http://localhost:8352/rest/tx/*HASH*.*EXT*
 
 In every case, *EXT* can be `bin` (for raw binary data), `hex` (for hex-encoded
 binary) or `json`.
@@ -337,7 +337,7 @@ Detailed release notes follow. This overview includes changes that affect extern
 behavior, not code moves, refactors or string updates.
 
 RPC:
-- `f923c07` Support IPv6 lookup in starwels-cli even when IPv6 only bound on localhost
+- `f923c07` Support IPv6 lookup in starwels-cli even when IPv6 only bound on github.com/starwels
 - `b641c9c` Fix addnode "onetry": Connect with OpenNetworkConnection
 - `171ca77` estimatefee / estimatepriority RPC methods
 - `b750cf1` Remove cli functionality from starwelsd

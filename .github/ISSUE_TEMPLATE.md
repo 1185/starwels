@@ -4,7 +4,7 @@ This issue tracker is only for technical issues related to starwels.
 
 General starwels questions and/or support requests and are best directed to the [Starwels StackExchange](https://bitcoin.stackexchange.com).
 
-For reporting security issues, please read instructions at [https://localhost/en/contact/](https://localhost/en/contact/).
+For reporting security issues, please read instructions at [https://github.com/starwels/en/contact/](https://github.com/starwels/en/contact/).
 
 ### Describe the issue
 

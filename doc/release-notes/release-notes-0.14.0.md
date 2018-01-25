@@ -149,7 +149,7 @@ Some examples:
 
     src/starwels-cli -named help command="help"
     src/starwels-cli -named getblockhash height=0
-    src/starwels-cli -named getblock blockhash=000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f
+    src/starwels-cli -named getblock blockhash=000000003d69a915e9da53348c5c272978bb743442e3a6341c11061c125811a2
     src/starwels-cli -named sendtoaddress address="(snip)" amount="1.0" subtractfeefromamount=true
 
 The order of arguments doesn't matter in this case. Named arguments are also
@@ -189,7 +189,7 @@ commands such as `prioritisetransaction` so that those changes will not be lost.
 Final Alert
 -----------
 
-The Alert System was [disabled and deprecated](https://localhost/en/alert/2016-11-01-alert-retirement) in Starwels 0.12.1 and removed in 0.13.0.
+The Alert System was [disabled and deprecated](https://github.com/starwels/en/alert/2016-11-01-alert-retirement) in Starwels 0.12.1 and removed in 0.13.0.
 The Alert System was retired with a maximum sequence final alert which causes any nodes
 supporting the Alert System to display a static hard-coded "Alert Key Compromised" message which also
 prevents any other alerts from overriding it. This final alert is hard-coded into this release

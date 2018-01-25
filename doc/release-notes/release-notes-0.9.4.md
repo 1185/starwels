@@ -25,7 +25,7 @@ various operating system maintainers. Review by Gregory Maxwell determined that
 this update is incompatible with the Starwels system and could lead to consensus
 forks.
 
-Starwels released binaries from https://localhost are unaffected,
+Starwels released binaries from https://github.com/starwels are unaffected,
 as are any built with the gitian deterministic build system.
 
 However, if you are running either
