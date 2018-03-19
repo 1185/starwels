@@ -7,7 +7,7 @@ Source: https://github.com/starwels/starwels
 Files: *
 Copyright: 2009-2018, Starwels Developers
 License: Expat
-Comment: The Starwels Developers encompasses the current developers listed on localhost,
+Comment: The Starwels Developers encompasses the current developers listed on github.com/starwels,
          as well as the numerous contributors to the project.
 
 Files: debian/*

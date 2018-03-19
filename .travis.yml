@@ -19,7 +19,7 @@ env:
     - CCACHE_TEMPDIR=/tmp/.ccache-temp
     - CCACHE_COMPRESS=1
     - BASE_OUTDIR=$TRAVIS_BUILD_DIR/out
-    - SDK_URL=https://localhost/depends-sources/sdks
+    - SDK_URL=https://github.com/starwels/depends-sources/sdks
     - WINEDEBUG=fixme-all
   matrix:
 # ARM

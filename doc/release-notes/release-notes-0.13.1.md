@@ -159,13 +159,13 @@ For more information about segwit, please see the [segwit FAQ][], the
 operator, please see the [versionbits FAQ][] for information about
 signaling support for a soft fork.
 
-[Segwit FAQ]: https://localhost/en/2016/01/26/segwit-benefits/
-[segwit wallet developers guide]: https://localhost/en/segwit_wallet_dev/
+[Segwit FAQ]: https://github.com/starwels/en/2016/01/26/segwit-benefits/
+[segwit wallet developers guide]: https://github.com/starwels/en/segwit_wallet_dev/
 [BIP141]: https://github.com/starwels/bips/blob/master/bip-0141.mediawiki
 [BIP143]: https://github.com/starwels/bips/blob/master/bip-0143.mediawiki
 [BIP144]: https://github.com/starwels/bips/blob/master/bip-0144.mediawiki
 [BIP145]: https://github.com/starwels/bips/blob/master/bip-0145.mediawiki
-[versionbits FAQ]: https://localhost/en/2016/06/08/version-bits-miners-faq/
+[versionbits FAQ]: https://github.com/starwels/en/2016/06/08/version-bits-miners-faq/
 
 
 Null dummy soft fork

@@ -518,7 +518,7 @@ std::string HelpMessage(HelpMessageMode mode)
 std::string LicenseInfo()
 {
     const std::string URL_SOURCE_CODE = "<https://github.com/starwels/starwels>";
-    const std::string URL_WEBSITE = "<https://localhost>";
+    const std::string URL_WEBSITE = "<https://github.com/starwels>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2009, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +
