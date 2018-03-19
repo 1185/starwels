@@ -1,0 +1,8 @@
+/usr/bin/starwels-cli		--	gen_context(system_u:object_r:starwels_exec_t,s0)
+/usr/sbin/starwelsd		--	gen_context(system_u:object_r:starwels_exec_t,s0)
+/usr/lib(64)?/starwels/starwelsd		--	gen_context(system_u:object_r:starwels_exec_t,s0)
+
+/etc/starwels(/.*)?		gen_context(system_u:object_r:starwels_conf_t,s0)
+/var/lib/starwels(/.*)?		gen_context(system_u:object_r:starwels_var_lib_t,s0)
+
+(/var)?/run/starwelsd(/.*)?   gen_context(system_u:object_r:starwels_var_run_t,s0)
