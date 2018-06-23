@@ -2032,8 +2032,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnett]</translation>
+        <source>[ai]</source>
+        <translation>[ait]</translation>
     </message>
 </context>
 <context>
@@ -2738,12 +2738,12 @@
         <translation>Ugyldig -proxy adresse: '%s'</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Lytt etter JSON-RPC tilkoblinger på &lt;port&gt; (standardverdi: %u eller testnett: %u)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Lytt etter JSON-RPC tilkoblinger på &lt;port&gt; (standardverdi: %u eller ait: %u)</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Lytt etter tilkoblinger på &lt;port&gt; (standardverdi: %u eller testnett: %u)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Lytt etter tilkoblinger på &lt;port&gt; (standardverdi: %u eller ait: %u)</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>

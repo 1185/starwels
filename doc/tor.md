@@ -43,7 +43,7 @@ config file):
 
 	HiddenServiceDir /var/lib/tor/starwels-service/
 	HiddenServicePort 8353 127.0.0.1:8353
-	HiddenServicePort 18353 127.0.0.1:18353
+	HiddenServicePort 8343 127.0.0.1:8343
 
 The directory can be different of course, but (both) port numbers should be equal to
 your starwelsd's P2P listen port (8353 by default).

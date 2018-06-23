@@ -2460,8 +2460,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <source>[ai]</source>
+        <translation>[ai]</translation>
     </message>
 </context>
 <context>
@@ -3098,8 +3098,8 @@
         <translation>Daha küçük boyutlu blok yeniden yapılandırması için fazladan işlemleri bellekte tut. (varsayılan: %u)</translation>
     </message>
     <message>
-        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, testnet: %s)</source>
-        <translation>Eğer bu blok zincirde yer alıyorsa onun ve atalarının geçerli olduğunu varsay ve potansiyel olarak onların betik doğrulamasını atla.  (Tümünü doğrulamak için 0, varsayılan %s, testnet: %s)</translation>
+        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, ai: %s)</source>
+        <translation>Eğer bu blok zincirde yer alıyorsa onun ve atalarının geçerli olduğunu varsay ve potansiyel olarak onların betik doğrulamasını atla.  (Tümünü doğrulamak için 0, varsayılan %s, ai: %s)</translation>
     </message>
     <message>
         <source>Maximum allowed median peer time offset adjustment. Local perspective of time may be influenced by peers forward or backward by this amount. (default: %u seconds)</source>
@@ -3770,12 +3770,12 @@
         <translation>Keypool tükendi, lütfen önce keypoolrefill'i çağırın</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
         <translation>JSON-RPC bağlantılarını &lt;port&gt; üzerinde dinle (varsayılan: %u veya tesnet: %u)</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Bağlantılar için dinlenecek &lt;port&gt; (varsayılan: %u ya da testnet: %u)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Bağlantılar için dinlenecek &lt;port&gt; (varsayılan: %u ya da ai: %u)</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>

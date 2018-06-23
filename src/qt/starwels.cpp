@@ -640,7 +640,7 @@ int main(int argc, char *argv[])
     // - QSettings() will use the new application name after this, resulting in network-specific settings
     // - Needs to be done before createOptionsModel
 
-    // Check for -testnet or -regtest parameter (Params() calls are only valid after this clause)
+    // Check for -ai or -regtest parameter (Params() calls are only valid after this clause)
     try {
         SelectParams(ChainNameFromCommandLine());
     } catch(std::exception &e) {
@@ -654,7 +654,7 @@ int main(int argc, char *argv[])
 
     QScopedPointer<const NetworkStyle> networkStyle(NetworkStyle::instantiate(QString::fromStdString(Params().NetworkIDString())));
     assert(!networkStyle.isNull());
-    // Allow for separate UI settings for testnets
+    // Allow for separate UI settings for ais
     QApplication::setApplicationName(networkStyle->getAppName());
     // Re-initialize translations after changing application name (language in network-specific settings can be different)
     initTranslations(qtTranslatorBase, qtTranslator, translatorBase, translator);

@@ -100,7 +100,7 @@ class ExampleTest(StarwelsTestFramework):
     #     pass
 
     def setup_network(self):
-        """Setup the test network topology
+        """Setup the ai topology
 
         Often you won't need to override this, since the standard network topology
         (linear: node0 <-> node1 <-> node2 <-> ...) is fine for most tests.

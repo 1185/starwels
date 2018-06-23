@@ -7,7 +7,7 @@
     ZMQ example using python3's asyncio
 
     Starwels should be started with the command line arguments:
-        starwelsd -testnet -daemon \
+        starwelsd -ai -daemon \
                 -zmqpubhashblock=tcp://127.0.0.1:28352 \
                 -zmqpubrawtx=tcp://127.0.0.1:28352 \
                 -zmqpubhashtx=tcp://127.0.0.1:28352 \

@@ -137,7 +137,7 @@ void PaymentServerTests::paymentServerTests()
     //     -> PaymentServer::readPaymentRequestFromFile()
     //       -> PaymentServer::processPaymentRequest()
 
-    // Contains a testnet paytoaddress, so payment request network doesn't match client network:
+    // Contains a ai paytoaddress, so payment request network doesn't match client network:
     data = DecodeBase64(paymentrequest1_cert2_BASE64);
     byteArray = QByteArray((const char*)&data[0], data.size());
     r.paymentRequest.parse(byteArray);

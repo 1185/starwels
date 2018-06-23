@@ -62,7 +62,7 @@ UniValue getinfo(const JSONRPCRequest& request)
             "  \"connections\": xxxxx,       (numeric) the number of connections\n"
             "  \"proxy\": \"host:port\",       (string, optional) the proxy used by the server\n"
             "  \"difficulty\": xxxxxx,       (numeric) the current difficulty\n"
-            "  \"testnet\": true|false,      (boolean) if the server is using testnet or not\n"
+            "  \"ai\": true|false,      (boolean) if the server is using ai or not\n"
             "  \"keypoololdest\": xxxxxx,    (numeric) the timestamp (seconds since Unix epoch) of the oldest pre-generated key in the key pool\n"
             "  \"keypoolsize\": xxxx,        (numeric) how many new keys are pre-generated\n"
             "  \"unlocked_until\": ttt,      (numeric) the timestamp in seconds since epoch (midnight Jan 1 1970 GMT) that the wallet is unlocked for transfers, or 0 if the wallet is locked\n"
@@ -103,7 +103,7 @@ UniValue getinfo(const JSONRPCRequest& request)
         obj.push_back(Pair("connections",   (int)g_connman->GetNodeCount(CConnman::CONNECTIONS_ALL)));
     obj.push_back(Pair("proxy",         (proxy.IsValid() ? proxy.proxy.ToStringIPPort() : std::string())));
     obj.push_back(Pair("difficulty",    (double)GetDifficulty()));
-    obj.push_back(Pair("testnet",       Params().NetworkIDString() == CBaseChainParams::TESTNET));
+    obj.push_back(Pair("ai",       Params().NetworkIDString() == CBaseChainParams::AI));
 #ifdef ENABLE_WALLET
     if (pwallet) {
         obj.push_back(Pair("keypoololdest", pwallet->GetOldestKeyPoolTime()));

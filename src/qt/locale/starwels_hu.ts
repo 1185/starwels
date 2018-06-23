@@ -2309,7 +2309,7 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
+        <source>[ai]</source>
         <translation>[teszthálózat]</translation>
     </message>
 </context>

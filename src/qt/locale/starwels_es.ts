@@ -2464,8 +2464,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <source>[ai]</source>
+        <translation>[ai]</translation>
     </message>
 </context>
 <context>
@@ -3105,8 +3105,8 @@
         <translation>Transacciones extra a mantener en la memoria para reconstrucciones de bloque compacto (predeterminado: %u)</translation>
     </message>
     <message>
-        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, testnet: %s)</source>
-        <translation>Si este bloque está en la cadena asuma que sus predecesores y él son válidos y potencialmente se saltan su script de verificación (0 para verificar todo, predeterminado: %s, testnet: %s)</translation>
+        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, ai: %s)</source>
+        <translation>Si este bloque está en la cadena asuma que sus predecesores y él son válidos y potencialmente se saltan su script de verificación (0 para verificar todo, predeterminado: %s, ai: %s)</translation>
     </message>
     <message>
         <source>Maximum allowed median peer time offset adjustment. Local perspective of time may be influenced by peers forward or backward by this amount. (default: %u seconds)</source>
@@ -3780,12 +3780,12 @@ Establecer la serialización de las transacciones sin procesar o el bloque hex d
         <translation>Keypool se ha agotado, llame a keypoolrefill primero</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Escuchar conexiones JSON-RPC en &lt;puerto&gt; (predeterminado: %u o testnet: %u)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Escuchar conexiones JSON-RPC en &lt;puerto&gt; (predeterminado: %u o ai: %u)</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Escuchar conexiones en &lt;puerto&gt; (predeterminado: %u o testnet: %u)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Escuchar conexiones en &lt;puerto&gt; (predeterminado: %u o ai: %u)</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>

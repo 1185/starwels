@@ -710,7 +710,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
+        <source>[ai]</source>
         <translation>[red-de-pruebas]</translation>
     </message>
 </context>

@@ -2464,8 +2464,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
-        <translation>[тестовая сеть]</translation>
+        <source>[ai]</source>
+        <translation>[ai]</translation>
     </message>
 </context>
 <context>
@@ -3098,8 +3098,8 @@
         <translation>Хранить в памяти дополнительные транзакции для реконструкции компактных блоков (по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, testnet: %s)</source>
-        <translation>Если этот блок в цепи, считать его и последующие блоки верными и потенциально пропускать проверку их скриптов (0 для проверки всех, по умолчанию: %s, тестовая сеть: %s)</translation>
+        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, ai: %s)</source>
+        <translation>Если этот блок в цепи, считать его и последующие блоки верными и потенциально пропускать проверку их скриптов (0 для проверки всех, по умолчанию: %s, ai: %s)</translation>
     </message>
     <message>
         <source>Maximum allowed median peer time offset adjustment. Local perspective of time may be influenced by peers forward or backward by this amount. (default: %u seconds)</source>
@@ -3770,11 +3770,11 @@
         <translation>Пул ключей опустел, пожалуйста, выполните keypoolrefill</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
         <translation>Прослушивать подключения JSON-RPC на &lt;порту&gt; (по умолчанию: %u или %u в тестовой сети)</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
         <translation>Принимать входящие подключения на &lt;port&gt; (по умолчанию: %u или %u в тестовой сети)</translation>
     </message>
     <message>

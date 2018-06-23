@@ -616,8 +616,8 @@ fs::path static StartupShortcutPath()
     std::string chain = ChainNameFromCommandLine();
     if (chain == CBaseChainParams::MAIN)
         return GetSpecialFolderPath(CSIDL_STARTUP) / "Starwels.lnk";
-    if (chain == CBaseChainParams::TESTNET) // Remove this special case when CBaseChainParams::TESTNET = "testnet4"
-        return GetSpecialFolderPath(CSIDL_STARTUP) / "Starwels (testnet).lnk";
+    if (chain == CBaseChainParams::AI) // Remove this special case when CBaseChainParams::AI = "ai4"
+        return GetSpecialFolderPath(CSIDL_STARTUP) / "Starwels (ai).lnk";
     return GetSpecialFolderPath(CSIDL_STARTUP) / strprintf("Starwels (%s).lnk", chain);
 }
 
@@ -650,8 +650,8 @@ bool SetStartOnSystemStartup(bool fAutoStart)
 
             // Start client minimized
             QString strArgs = "-min";
-            // Set -testnet /-regtest options
-            strArgs += QString::fromStdString(strprintf(" -testnet=%d -regtest=%d", gArgs.GetBoolArg("-testnet", false), gArgs.GetBoolArg("-regtest", false)));
+            // Set -ai /-regtest options
+            strArgs += QString::fromStdString(strprintf(" -ai=%d -regtest=%d", gArgs.GetBoolArg("-ai", false), gArgs.GetBoolArg("-regtest", false)));
 
 #ifdef UNICODE
             boost::scoped_array<TCHAR> args(new TCHAR[strArgs.length() + 1]);
@@ -760,7 +760,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
             optionFile << "Name=Starwels\n";
         else
             optionFile << strprintf("Name=Starwels (%s)\n", chain);
-        optionFile << "Exec=" << pszExePath << strprintf(" -min -testnet=%d -regtest=%d\n", gArgs.GetBoolArg("-testnet", false), gArgs.GetBoolArg("-regtest", false));
+        optionFile << "Exec=" << pszExePath << strprintf(" -min -ai=%d -regtest=%d\n", gArgs.GetBoolArg("-ai", false), gArgs.GetBoolArg("-regtest", false));
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";
         optionFile.close();
