@@ -665,7 +665,7 @@
         <translation>W przybliżeniu %1 GB danych będzie przechowywanych w tym katalogu. </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the blockchain.</source>
+        <source>%1 will download and store a copy of the Starwels block chain.</source>
         <translation>%1 ściągnie i przechowa kopie łańcucha bloków Starwels.</translation>
     </message>
     <message>

@@ -169,7 +169,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR STARWELSS&lt;/b&gt;!</source>
-        <translation>ВНИМАНИЕ: Ако шифрирате вашият портфейл и изгубите паролата си, &lt;b&gt;ЩЕ ИЗГУБИТЕ ВСИЧКИТЕ СИ СТАРВЕЛСИ&lt;/b&gt;!</translation>
+        <translation>ВНИМАНИЕ: Ако шифрирате вашият портфейл и изгубите паролата си, &lt;b&gt;ЩЕ ИЗГУБИТЕ ВСИЧКИТЕ СИ STARWELS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -331,7 +331,7 @@
     </message>
     <message>
         <source>Send coins to a Starwels address</source>
-        <translation>Изпращане към Старвелс адрес</translation>
+        <translation>Изпращане към Starwels адрес</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -355,7 +355,7 @@
     </message>
     <message>
         <source>Starwels</source>
-        <translation>Старвелс</translation>
+        <translation>Starwels</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -711,7 +711,7 @@
     </message>
     <message>
         <source>The entered address "%1" is not a valid Starwels address.</source>
-        <translation>"%1" не е валиден Старвелс адрес.</translation>
+        <translation>"%1" не е валиден Starwels адрес.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -828,7 +828,7 @@
     </message>
     <message>
         <source>Starwels</source>
-        <translation>Старвелс</translation>
+        <translation>Starwels</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -1040,7 +1040,7 @@
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Starwels network after a connection is established, but this process has not completed yet.</source>
-        <translation>Текущата информация на екрана може да не е актуална. Вашият портфейл ще се синхронизира автоматично с мрежата на Старвелс, щом поне една връзката с нея се установи; този процес все още не е приключил.</translation>
+        <translation>Текущата информация на екрана може да не е актуална. Вашият портфейл ще се синхронизира автоматично с мрежата на Starwels, щом поне една връзката с нея се установи; този процес все още не е приключил.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1850,7 +1850,7 @@
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Starwels address</source>
-        <translation>Проверете съобщение, за да сте сигурни че е подписано с определен Старвелс адрес</translation>
+        <translation>Проверете съобщение, за да сте сигурни че е подписано с определен Starwels адрес</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>

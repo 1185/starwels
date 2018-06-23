@@ -24,7 +24,7 @@ Unpack the files into a directory, and then run starwels-qt.exe.
 
 ### OS X
 
-Drag Starwels-Core to your applications folder, and then run Starwels-Core.
+Drag Starwels to your applications folder, and then run Starwels.
 
 ### Need Help?
 
