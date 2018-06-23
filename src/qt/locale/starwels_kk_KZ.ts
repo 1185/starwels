@@ -71,7 +71,7 @@
     </message>
     <message>
         <source>Starwels</source>
-        <translation>Старвелс</translation>
+        <translation>Starwels</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -170,7 +170,7 @@
     <name>Intro</name>
     <message>
         <source>Starwels</source>
-        <translation>Старвелс</translation>
+        <translation>Starwels</translation>
     </message>
     <message>
         <source>Error</source>

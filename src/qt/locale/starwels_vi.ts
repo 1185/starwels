@@ -879,8 +879,8 @@
         <translation>Gần đúng %1 GB of data sẽ được lưu giữ trong danh mục này.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the blockchain.</source>
-        <translation>%1 sẽ download và lưu trữ một bản copy của blockchain.</translation>
+        <source>%1 will download and store a copy of the Starwels block chain.</source>
+        <translation>%1 sẽ download và lưu trữ một bản copy của Starwels block chain.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>

@@ -139,7 +139,7 @@
     </message>
     <message>
         <source>Send coins to a Starwels address</source>
-        <translation>Испрати старвелси на Старвелс адреса</translation>
+        <translation>Испрати starwels на Starwels адреса</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
@@ -147,7 +147,7 @@
     </message>
     <message>
         <source>Starwels</source>
-        <translation>Старвелс</translation>
+        <translation>Starwels</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -300,7 +300,7 @@
     <name>Intro</name>
     <message>
         <source>Starwels</source>
-        <translation>Старвелс</translation>
+        <translation>Starwels</translation>
     </message>
     <message>
         <source>Error</source>
@@ -591,7 +591,7 @@
     </message>
     <message>
         <source>Starwels</source>
-        <translation>Старвелс</translation>
+        <translation>Starwels</translation>
     </message>
     <message>
         <source>Warning</source>
