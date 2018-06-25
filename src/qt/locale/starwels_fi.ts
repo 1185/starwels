@@ -2100,8 +2100,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <source>[ai]</source>
+        <translation>[ai]</translation>
     </message>
 </context>
 <context>
@@ -2874,12 +2874,12 @@
         <translation>Virheellinen proxy-osoite '%s'</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Kuuntele JSON-RPC-yhteyksiä portissa &lt;port&gt; (oletus: %u tai testnet: %u)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Kuuntele JSON-RPC-yhteyksiä portissa &lt;port&gt; (oletus: %u tai ai: %u)</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Kuuntele yhteyksiä portissa &lt;port&gt; (oletus: %u tai testnet: %u)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Kuuntele yhteyksiä portissa &lt;port&gt; (oletus: %u tai ai: %u)</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>

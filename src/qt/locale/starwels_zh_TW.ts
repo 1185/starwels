@@ -2460,8 +2460,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <source>[ai]</source>
+        <translation>[ai]</translation>
     </message>
 </context>
 <context>
@@ -3099,7 +3099,7 @@
         <translation>為了將摘要區塊完整回組而額外保留在記憶體中的交易數量(預設值: %u)</translation>
     </message>
     <message>
-        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, testnet: %s)</source>
+        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, ai: %s)</source>
         <translation>假設已經在區塊鏈中的區塊以及其先前的區塊都合法，因此對它們略過指令碼驗證(0 表示一律要驗證，預設值: %s, 測試網路: %s)</translation>
     </message>
     <message>
@@ -3771,11 +3771,11 @@
         <translation>密鑰池已經乾了，請先執行 keypoolrefill</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
         <translation>在通訊埠 &lt;port&gt; 聽候 JSON-RPC 連線(預設值: %u, 或若為測試網路: %u)</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
         <translation>在通訊埠 &lt;port&gt; 聽候連線(預設值: %u, 或若為測試網路: %u)</translation>
     </message>
     <message>

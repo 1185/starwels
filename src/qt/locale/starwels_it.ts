@@ -2433,8 +2433,8 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <source>[ai]</source>
+        <translation>[ai]</translation>
     </message>
 </context>
 <context>
@@ -3587,12 +3587,12 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>Indirizzo -proxy non valido: '%s'</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Resta in attesa di connessioni JSON-RPC su &lt;port&gt; (predefinito: %u o testnet: %u)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Resta in attesa di connessioni JSON-RPC su &lt;port&gt; (predefinito: %u o ai: %u)</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Resta in attesa di connessioni su &lt;port&gt; (predefinito: %u o testnet: %u)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Resta in attesa di connessioni su &lt;port&gt; (predefinito: %u o ai: %u)</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>

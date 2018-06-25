@@ -2453,7 +2453,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
+        <source>[ai]</source>
         <translation>[testovacia sieť]</translation>
     </message>
 </context>
@@ -3563,11 +3563,11 @@
         <translation>Neplatná adresa proxy: '%s'</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
         <translation>Počúvať JSON-RPC pripojenia na &lt;port&gt; (predvolené: %u alebo testovacia sieť: %u)</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
         <translation>Počúvať pripojenia na &lt;port&gt; (predvolené: %u alebo testovacia sieť: %u)</translation>
     </message>
     <message>

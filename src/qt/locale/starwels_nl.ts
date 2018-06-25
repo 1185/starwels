@@ -2464,8 +2464,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnetwerk]</translation>
+        <source>[ai]</source>
+        <translation>[aiwerk]</translation>
     </message>
 </context>
 <context>
@@ -3098,8 +3098,8 @@
         <translation>Extra transacties wordt bijgehouden voor compacte blokreconstructie (standaard: %u)</translation>
     </message>
     <message>
-        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, testnet: %s)</source>
-        <translation>Als dit blok in de keten staat, gaat het ervan uit dat dit blok en zijn voorouders geldig zijn en mogelijk hun script verificatie overslaan (0 om alles te verifiëren, standaard:%s, testnet:%s)</translation>
+        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, ai: %s)</source>
+        <translation>Als dit blok in de keten staat, gaat het ervan uit dat dit blok en zijn voorouders geldig zijn en mogelijk hun script verificatie overslaan (0 om alles te verifiëren, standaard:%s, ai:%s)</translation>
     </message>
     <message>
         <source>Maximum allowed median peer time offset adjustment. Local perspective of time may be influenced by peers forward or backward by this amount. (default: %u seconds)</source>
@@ -3766,12 +3766,12 @@
         <translation>Keypool op geraakt, roep alsjeblieft eerst keypoolrefill functie aan</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Luister naar JSON-RPC-verbindingen op &lt;poort&gt; (standaard: %u of testnet: %u)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Luister naar JSON-RPC-verbindingen op &lt;poort&gt; (standaard: %u of ai: %u)</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Luister naar verbindingen op &lt;poort&gt; (standaard: %u of testnet: %u)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Luister naar verbindingen op &lt;poort&gt; (standaard: %u of ai: %u)</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>

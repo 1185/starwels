@@ -73,7 +73,7 @@ namespace // Anon namespace
 
 //
 // Create a name that is unique for:
-//  testnet / non-testnet
+//  ai / non-ai
 //  data directory
 //
 static QString ipcServerName()
@@ -82,7 +82,7 @@ static QString ipcServerName()
 
     // Append a simple hash of the datadir
     // Note that GetDataDir(true) returns a different path
-    // for -testnet versus main net
+    // for -ai versus main net
     QString ddir(GUIUtil::boostPathToQString(GetDataDir(true)));
     name.append(QString::number(qHash(ddir)));
 
@@ -209,7 +209,7 @@ void PaymentServer::ipcParseCommandLine(int argc, char* argv[])
 
         // If the starwels: URI contains a payment request, we are not able to detect the
         // network as that would require fetching and parsing the payment request.
-        // That means clicking such an URI which contains a testnet payment request
+        // That means clicking such an URI which contains a ai payment request
         // will start a mainnet instance and throw a "wrong network" error.
         if (arg.startsWith(STARWELS_IPC_PREFIX, Qt::CaseInsensitive)) // starwels: URI
         {
@@ -226,9 +226,9 @@ void PaymentServer::ipcParseCommandLine(int argc, char* argv[])
                     SelectParams(CBaseChainParams::MAIN);
                 }
                 else {
-                    tempChainParams = CreateChainParams(CBaseChainParams::TESTNET);
+                    tempChainParams = CreateChainParams(CBaseChainParams::AI);
                     if (address.IsValid(*tempChainParams))
-                        SelectParams(CBaseChainParams::TESTNET);
+                        SelectParams(CBaseChainParams::AI);
                 }
             }
         }
@@ -245,7 +245,7 @@ void PaymentServer::ipcParseCommandLine(int argc, char* argv[])
                 }
                 else if (request.getDetails().network() == "test")
                 {
-                    SelectParams(CBaseChainParams::TESTNET);
+                    SelectParams(CBaseChainParams::AI);
                 }
             }
         }

@@ -481,7 +481,7 @@ static bool AcceptToMemoryPoolWorker(const CChainParams& chainparams, CTxMemPool
         return state.DoS(0, false, REJECT_NONSTANDARD, "no-witness-yet", true);
     }
 
-    // Rather not work on nonstandard transactions (unless -testnet/-regtest)
+    // Rather not work on nonstandard transactions (unless -ai/-regtest)
     std::string reason;
     if (fRequireStandard && !IsStandardTx(tx, reason, witnessEnabled))
         return state.DoS(0, false, REJECT_NONSTANDARD, reason);
@@ -2965,7 +2965,7 @@ static bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationSta
     if (block.GetBlockTime() > nAdjustedTime + MAX_FUTURE_BLOCK_TIME)
         return state.Invalid(false, REJECT_INVALID, "time-too-new", "block timestamp too far in the future");
 
-    // Reject outdated version blocks when 95% (75% on testnet) of the network has upgraded:
+    // Reject outdated version blocks when 95% (75% on ai) of the network has upgraded:
     // check for version 2, 3 and 4 upgrades
     if((block.nVersion < 2 && nHeight >= consensusParams.BIP34Height) ||
        (block.nVersion < 3 && nHeight >= consensusParams.BIP66Height) ||
@@ -3373,7 +3373,7 @@ void PruneBlockFilesManual(int nManualPruneHeight)
  *
  * Pruning functions are called from FlushStateToDisk when the global fCheckForPruning flag has been set.
  * Block and undo files are deleted in lock-step (when blk00003.dat is deleted, so is rev00003.dat.)
- * Pruning cannot take place until the longest chain is at least a certain length (100000 on mainnet, 1000 on testnet, 1000 on regtest).
+ * Pruning cannot take place until the longest chain is at least a certain length (100000 on mainnet, 1000 on ai, 1000 on regtest).
  * Pruning will never delete a block within a defined distance (currently 288) from the active chain's tip.
  * The block index is updated by unsetting HAVE_DATA and HAVE_UNDO for any blocks that were stored in the deleted files.
  * A db flag records the fact that at least some block files have been pruned.

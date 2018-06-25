@@ -18,7 +18,7 @@ class CBaseChainParams
 public:
     /** BIP70 chain name strings (main, test or regtest) */
     static const std::string MAIN;
-    static const std::string TESTNET;
+    static const std::string AI;
     static const std::string REGTEST;
 
     const std::string& DataDir() const { return strDataDir; }
@@ -54,7 +54,7 @@ const CBaseChainParams& BaseParams();
 void SelectBaseParams(const std::string& chain);
 
 /**
- * Looks for -regtest, -testnet and returns the appropriate BIP70 chain name.
+ * Looks for -regtest, -ai and returns the appropriate BIP70 chain name.
  * @return CBaseChainParams::MAX_NETWORK_TYPES if an invalid combination is given. CBaseChainParams::MAIN by default.
  */
 std::string ChainNameFromCommandLine();

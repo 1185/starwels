@@ -153,7 +153,7 @@ private:
     QCompleter *autoCompleter;
     QThread thread;
 
-    /** Update UI with latest network info from model. */
+    /** Update UI with laai info from model. */
     void updateNetworkState();
 };
 

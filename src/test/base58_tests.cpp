@@ -136,9 +136,9 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_parse)
         std::vector<unsigned char> exp_payload = ParseHex(test[1].get_str());
         const UniValue &metadata = test[2].get_obj();
         bool isPrivkey = find_value(metadata, "isPrivkey").get_bool();
-        bool isTestnet = find_value(metadata, "isTestnet").get_bool();
-        if (isTestnet)
-            SelectParams(CBaseChainParams::TESTNET);
+        bool isAi = find_value(metadata, "isAi").get_bool();
+        if (isAi)
+            SelectParams(CBaseChainParams::AI);
         else
             SelectParams(CBaseChainParams::MAIN);
         if(isPrivkey)
@@ -190,9 +190,9 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_gen)
         std::vector<unsigned char> exp_payload = ParseHex(test[1].get_str());
         const UniValue &metadata = test[2].get_obj();
         bool isPrivkey = find_value(metadata, "isPrivkey").get_bool();
-        bool isTestnet = find_value(metadata, "isTestnet").get_bool();
-        if (isTestnet)
-            SelectParams(CBaseChainParams::TESTNET);
+        bool isAi = find_value(metadata, "isAi").get_bool();
+        if (isAi)
+            SelectParams(CBaseChainParams::AI);
         else
             SelectParams(CBaseChainParams::MAIN);
         if(isPrivkey)

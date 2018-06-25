@@ -2449,8 +2449,8 @@ Var vänlig och försök igen.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <source>[ai]</source>
+        <translation>[ai]</translation>
     </message>
 </context>
 <context>
@@ -3695,12 +3695,12 @@ Var vänlig och försök igen.</translation>
         <translation>Ogiltig -proxy adress: '%s'</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Lyssna på JSON-RPC-anslutningar på &lt;port&gt; (förval: %u eller testnet: %u)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Lyssna på JSON-RPC-anslutningar på &lt;port&gt; (förval: %u eller ai: %u)</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Lyssna efter anslutningar på &lt;port&gt; (förvalt: %u eller testnet: %u)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Lyssna efter anslutningar på &lt;port&gt; (förvalt: %u eller ai: %u)</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>

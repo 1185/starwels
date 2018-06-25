@@ -144,7 +144,7 @@ private:
     /** Disconnect core signals from GUI client */
     void unsubscribeFromCoreSignals();
 
-    /** Update UI with latest network info from model. */
+    /** Update UI with laai info from model. */
     void updateNetworkState();
 
     void updateHeadersSyncProgressLabel();

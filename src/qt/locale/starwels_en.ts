@@ -3262,8 +3262,8 @@
     <name>SplashScreen</name>
     <message>
         <location filename="../networkstyle.cpp" line="+19"/>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <source>[ai]</source>
+        <translation>[ai]</translation>
     </message>
 </context>
 <context>
@@ -4121,7 +4121,7 @@
     </message>
     <message>
         <location line="+20"/>
-        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, testnet: %s)</source>
+        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, ai: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5046,12 +5046,12 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

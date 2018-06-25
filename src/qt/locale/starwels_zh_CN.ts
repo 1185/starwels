@@ -2458,8 +2458,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
-        <translation>[测试网络]</translation>
+        <source>[ai]</source>
+        <translation>[ai]</translation>
     </message>
 </context>
 <context>
@@ -3650,12 +3650,12 @@
         <translation>无效的代理地址：%s</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>使用 &lt;port&gt;端口监听 JSON-RPC 连接 (默认: %u ; testnet: %u) </translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>使用 &lt;port&gt;端口监听 JSON-RPC 连接 (默认: %u ; ai: %u) </translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>使用端口 &lt;port&gt; 监听连接 (默认: %u ; testnet: %u) </translation>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>使用端口 &lt;port&gt; 监听连接 (默认: %u ; ai: %u) </translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
