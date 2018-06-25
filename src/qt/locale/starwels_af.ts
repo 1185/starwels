@@ -1990,12 +1990,12 @@
         <translation>(standaard: %s)</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Luister vir JSON-RPC konneksies op &lt;port&gt; (verstek: %u of testnet: %u)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Luister vir JSON-RPC konneksies op &lt;port&gt; (verstek: %u of ai: %u)</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Luister vir konneksies op &lt;port&gt; (verstek: %u of testnet: %u)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Luister vir konneksies op &lt;port&gt; (verstek: %u of ai: %u)</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>

@@ -32,9 +32,9 @@ block hash)
 If this block is in the chain assume that it and its ancestors are valid
 and potentially skip their script verification (0 to verify all,
 default:
-0000000002a47ec40e87c18501786717cbebb96efa3bb05505e1c24cce51689e,
-testnet:
-00000000bf9f221b2acc9bd6ae001ccd5640615a5e4d9ed94bbb3564d3e372bd)
+00000000764077b29d13e1cb2484f028a24ef2a44486b6e5d3cb17eb4716c465,
+ai:
+00000000d7674ad1e7703e7ba02b7611c12fe74de27b6a414cf6e906cc3599e9)
 .HP
 \fB\-conf=\fR<file>
 .IP
@@ -213,7 +213,7 @@ Support filtering of blocks and transaction with bloom filters (default:
 .HP
 \fB\-port=\fR<port>
 .IP
-Listen for connections on <port> (default: 8353 or testnet: 18353)
+Listen for connections on <port> (default: 8343 or ai: 8333)
 .HP
 \fB\-proxy=\fR<ip:port>
 .IP
@@ -424,7 +424,7 @@ Shrink debug.log file on client startup (default: 1 when no \fB\-debug\fR)
 .PP
 Chain selection options:
 .HP
-\fB\-testnet\fR
+\fB\-ai\fR
 .IP
 Use the test chain
 .PP
@@ -521,8 +521,8 @@ option can be specified multiple times
 .HP
 \fB\-rpcport=\fR<port>
 .IP
-Listen for JSON\-RPC connections on <port> (default: 8352 or testnet:
-18352)
+Listen for JSON\-RPC connections on <port> (default: 8342 or ai:
+8332)
 .HP
 \fB\-rpcallowip=\fR<ip>
 .IP

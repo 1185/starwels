@@ -194,7 +194,7 @@ touch -a -m -t 201504280000 %{buildroot}%{_tmpfilesdir}/starwels.conf
 mkdir -p %{buildroot}%{_sysconfdir}/sysconfig
 cat <<EOF > %{buildroot}%{_sysconfdir}/sysconfig/starwels
 # Provide options to the starwels daemon here, for example
-# OPTIONS="-testnet -disable-wallet"
+# OPTIONS="-ai -disable-wallet"
 
 OPTIONS=""
 
@@ -332,10 +332,10 @@ if [ `%{_sbindir}/sestatus |grep -c "disabled"` -eq 0 ]; then
 for selinuxvariant in %{selinux_variants}; do
 	%{_sbindir}/semodule -s ${selinuxvariant} -i %{_datadir}/selinux/${selinuxvariant}/starwels.pp &> /dev/null || :
 done
-%{_sbindir}/semanage port -a -t starwels_port_t -p tcp 8352
-%{_sbindir}/semanage port -a -t starwels_port_t -p tcp 8353
-%{_sbindir}/semanage port -a -t starwels_port_t -p tcp 18352
-%{_sbindir}/semanage port -a -t starwels_port_t -p tcp 18353
+%{_sbindir}/semanage port -a -t starwels_port_t -p tcp 8342
+%{_sbindir}/semanage port -a -t starwels_port_t -p tcp 8343
+%{_sbindir}/semanage port -a -t starwels_port_t -p tcp 8332
+%{_sbindir}/semanage port -a -t starwels_port_t -p tcp 8333
 %{_sbindir}/semanage port -a -t starwels_port_t -p tcp 18443
 %{_sbindir}/semanage port -a -t starwels_port_t -p tcp 18444
 %{_sbindir}/fixfiles -R starwels-server restore &> /dev/null || :
@@ -353,10 +353,10 @@ fi
 # SELinux
 if [ $1 -eq 0 ]; then
 	if [ `%{_sbindir}/sestatus |grep -c "disabled"` -eq 0 ]; then
-	%{_sbindir}/semanage port -d -p tcp 8352
-	%{_sbindir}/semanage port -d -p tcp 8353
-	%{_sbindir}/semanage port -d -p tcp 18352
-	%{_sbindir}/semanage port -d -p tcp 18353
+	%{_sbindir}/semanage port -d -p tcp 8342
+	%{_sbindir}/semanage port -d -p tcp 8343
+	%{_sbindir}/semanage port -d -p tcp 8332
+	%{_sbindir}/semanage port -d -p tcp 8333
 	%{_sbindir}/semanage port -d -p tcp 18443
 	%{_sbindir}/semanage port -d -p tcp 18444
 	for selinuxvariant in %{selinux_variants}; do

@@ -16,8 +16,8 @@ static const struct {
     const char *titleAddText;
 } network_styles[] = {
     {"main", QAPP_APP_NAME_DEFAULT, 0, 0, ""},
-    {"test", QAPP_APP_NAME_TESTNET, 70, 30, QT_TRANSLATE_NOOP("SplashScreen", "[testnet]")},
-    {"regtest", QAPP_APP_NAME_TESTNET, 160, 30, "[regtest]"}
+    {"test", QAPP_APP_NAME_AI, 70, 30, QT_TRANSLATE_NOOP("SplashScreen", "[ai]")},
+    {"regtest", QAPP_APP_NAME_AI, 160, 30, "[regtest]"}
 };
 static const unsigned network_styles_count = sizeof(network_styles)/sizeof(*network_styles);
 
@@ -52,7 +52,7 @@ NetworkStyle::NetworkStyle(const QString &_appName, const int iconColorHueShift,
                 col.getHsl(&h,&s,&l);
 
                 // rotate color on RGB color circle
-                // 70° should end up with the typical "testnet" green
+                // 70° should end up with the typical "ai" green
                 h+=iconColorHueShift;
 
                 // change saturation value

@@ -159,7 +159,7 @@ Low-level RPC changes
 ### P2P protocol and network code
 - #11397 `27e861a` Improve and document SOCKS code (laanwj)
 - #11252 `0fe2a9a` When clearing addrman clear mapInfo and mapAddr (instagibbs)
-- #11527 `a2bd86a` Remove my testnet DNS seed (schildbach)
+- #11527 `a2bd86a` Remove my ai DNS seed (schildbach)
 - #10756 `0a5477c` net processing: swap out signals for an interface class (theuni)
 - #11531 `55b7abf` Check that new headers are not a descendant of an invalid block (more effeciently) (TheBlueMatt)
 - #11560 `49bf090` Connect to a new outbound peer if our tip is stale (sdaftuar)

@@ -112,7 +112,7 @@ QT_TRANSLATE_NOOP("starwels", ""
 QT_TRANSLATE_NOOP("starwels", ""
 "If this block is in the chain assume that it and its ancestors are valid and "
 "potentially skip their script verification (0 to verify all, default: %s, "
-"testnet: %s)"),
+"ai: %s)"),
 QT_TRANSLATE_NOOP("starwels", ""
 "Invalid amount for -maxtxfee=<amount>: '%s' (must be at least the minrelay "
 "fee of %s to prevent stuck transactions)"),
@@ -331,8 +331,8 @@ QT_TRANSLATE_NOOP("starwels", "Invalid netmask specified in -whitelist: '%s'"),
 QT_TRANSLATE_NOOP("starwels", "Keep at most <n> unconnectable transactions in memory (default: %u)"),
 QT_TRANSLATE_NOOP("starwels", "Keep the transaction memory pool below <n> megabytes (default: %u)"),
 QT_TRANSLATE_NOOP("starwels", "Keypool ran out, please call keypoolrefill first"),
-QT_TRANSLATE_NOOP("starwels", "Listen for JSON-RPC connections on <port> (default: %u or testnet: %u)"),
-QT_TRANSLATE_NOOP("starwels", "Listen for connections on <port> (default: %u or testnet: %u)"),
+QT_TRANSLATE_NOOP("starwels", "Listen for JSON-RPC connections on <port> (default: %u or ai: %u)"),
+QT_TRANSLATE_NOOP("starwels", "Listen for connections on <port> (default: %u or ai: %u)"),
 QT_TRANSLATE_NOOP("starwels", "Loading P2P addresses..."),
 QT_TRANSLATE_NOOP("starwels", "Loading banlist..."),
 QT_TRANSLATE_NOOP("starwels", "Loading block index..."),

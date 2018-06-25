@@ -2545,8 +2545,8 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <source>[ai]</source>
+        <translation>[ai]</translation>
     </message>
 </context>
 <context>
@@ -3219,8 +3219,8 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>Transazioni extra da mantenere in memoria per ricostruzioni compatte del blocco (predefinito: %u)</translation>
     </message>
     <message>
-        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, testnet: %s)</source>
-        <translation>Se questo blocco è nella catena, assume che esso e i suoi predecessori siano validi e potenzialmente salta la verifica dei loro script (0 per verificarli tutti, predefinito: %s, testnet: %s)</translation>
+        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, ai: %s)</source>
+        <translation>Se questo blocco è nella catena, assume che esso e i suoi predecessori siano validi e potenzialmente salta la verifica dei loro script (0 per verificarli tutti, predefinito: %s, ai: %s)</translation>
     </message>
     <message>
         <source>Maximum allowed median peer time offset adjustment. Local perspective of time may be influenced by peers forward or backward by this amount. (default: %u seconds)</source>
@@ -3979,12 +3979,12 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>Keypool esaurito, prima invocare keypoolrefill</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Resta in attesa di connessioni JSON-RPC su &lt;port&gt; (predefinito: %u o testnet: %u)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Resta in attesa di connessioni JSON-RPC su &lt;port&gt; (predefinito: %u o ai: %u)</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Resta in attesa di connessioni su &lt;port&gt; (predefinito: %u o testnet: %u)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Resta in attesa di connessioni su &lt;port&gt; (predefinito: %u o ai: %u)</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>

@@ -2466,7 +2466,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
+        <source>[ai]</source>
         <translation>[rede de testes]</translation>
     </message>
 </context>
@@ -3592,12 +3592,12 @@
         <translation>Incluir endereços de IP na informação de depuração (predefinição: %u)</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
         <translation>Escutar por ligações JSON-RPC na porta &lt;port&gt; (predefinição: %u ou rede de testes: %u)</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Escute ligações na porta &lt;port&gt; (por defeito: %u ou testnet: %u)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Escute ligações na porta &lt;port&gt; (por defeito: %u ou ai: %u)</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>

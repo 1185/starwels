@@ -1608,7 +1608,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
+        <source>[ai]</source>
         <translation>آزمایش شبکه</translation>
     </message>
 </context>

@@ -51,6 +51,6 @@ static const int MAX_URI_LENGTH = 255;
 #define QAPP_ORG_NAME "Starwels"
 #define QAPP_ORG_DOMAIN "github.com/starwels"
 #define QAPP_APP_NAME_DEFAULT "Starwels-Qt"
-#define QAPP_APP_NAME_TESTNET "Starwels-Qt-testnet"
+#define QAPP_APP_NAME_AI "Starwels-Qt-ai"
 
 #endif // STARWELS_QT_GUICONSTANTS_H

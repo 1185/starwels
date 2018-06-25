@@ -2352,7 +2352,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
+        <source>[ai]</source>
         <translation>[red-de-pruebas]</translation>
     </message>
 </context>
@@ -3477,12 +3477,12 @@
         <translation>Keypool se ha agotado, llame a keypoolrefill primero</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Escuchar conexiones JSON-RPC en &lt;port&gt;(predeterminado: %u o testnet: %u) </translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Escuchar conexiones JSON-RPC en &lt;port&gt;(predeterminado: %u o ai: %u) </translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Escuchar conexiones en &lt;port&gt;(predeterminado: %u o testnet: %u) </translation>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Escuchar conexiones en &lt;port&gt;(predeterminado: %u o ai: %u) </translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>

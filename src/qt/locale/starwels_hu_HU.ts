@@ -2300,8 +2300,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <source>[ai]</source>
+        <translation>[ai]</translation>
     </message>
 </context>
 <context>
@@ -2722,7 +2722,7 @@
         <translation>Hiba a tárca betöltésekor %s. Érvénytelen karakterek a tárca fájlnévben.</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
         <translation>Figyelés a JSON-RPC kapcsolatokra itt: &lt;port&gt; (alapértelmezett:  %u vagy tesztnet: %u)</translation>
     </message>
     <message>

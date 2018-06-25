@@ -151,9 +151,9 @@ on all categories (and give you a very large debug.log file).
 The Qt code routes qDebug() output to debug.log under category "qt": run with -debug=qt
 to see it.
 
-**testnet and regtest modes**
+**ai and regtest modes**
 
-Run with the -testnet option to run with "play starwelss" on the test network, if you
+Run with the -ai option to run with "play starwelss" on the ai network, if you
 are testing multi-machine code that needs to operate across the internet.
 
 If you are testing something that can run on one machine, run with the -regtest option.
@@ -228,7 +228,7 @@ Threads
 
 - ThreadMapPort : Universal plug-and-play startup/shutdown
 
-- ThreadSocketHandler : Sends/Receives data from peers on port 8353.
+- ThreadSocketHandler : Sends/Receives data from peers on port 8343.
 
 - ThreadOpenAddedConnections : Opens network connections to added nodes.
 
@@ -240,7 +240,7 @@ Threads
 
 - ThreadFlushWalletDB : Close the wallet.dat file if it hasn't been used in 500ms.
 
-- ThreadRPCServer : Remote procedure call handler, listens on port 8352 for connections and services them.
+- ThreadRPCServer : Remote procedure call handler, listens on port 8342 for connections and services them.
 
 - StarwelsMiner : Generates starwelss (if wallet is enabled).
 

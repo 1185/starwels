@@ -2533,8 +2533,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
-        <translation>[测试网络]</translation>
+        <source>[ai]</source>
+        <translation>[ai]</translation>
     </message>
 </context>
 <context>
@@ -3220,8 +3220,8 @@
         <translation>为了将摘要区块完整重组而额外保留在內存中的交易数量（默认：%u）</translation>
     </message>
     <message>
-        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, testnet: %s)</source>
-        <translation>假设已经在区块链中的区块以及其先前的区块都合法，因此对它们略过脚本验证（0表示一律要验证，默认：%s，测试网络：%s）</translation>
+        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, ai: %s)</source>
+        <translation>假设已经在区块链中的区块以及其先前的区块都合法，因此对它们略过脚本验证（0表示一律要验证，默认：%s，ai：%s）</translation>
     </message>
     <message>
         <source>Maximum allowed median peer time offset adjustment. Local perspective of time may be influenced by peers forward or backward by this amount. (default: %u seconds)</source>
@@ -3977,12 +3977,12 @@
         <translation>密钥池已经耗尽，请先执行keypoolrefill</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>使用 &lt;port&gt;端口监听 JSON-RPC 连接 (默认: %u ; testnet: %u) </translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>使用 &lt;port&gt;端口监听 JSON-RPC 连接 (默认: %u ; ai: %u) </translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>使用端口 &lt;port&gt; 监听连接 (默认: %u ; testnet: %u) </translation>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>使用端口 &lt;port&gt; 监听连接 (默认: %u ; ai: %u) </translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>

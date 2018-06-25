@@ -2544,8 +2544,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnett]</translation>
+        <source>[ai]</source>
+        <translation>[ait]</translation>
     </message>
 </context>
 <context>
@@ -3222,8 +3222,8 @@
         <translation>Ekstra transaksjoner å beholde i minne for rekonstruksjoner av kompakte blokker (forvalg: %u)</translation>
     </message>
     <message>
-        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, testnet: %s)</source>
-        <translation>Hvis denne blokken er i kjeden, anta at den og dens opphav er gyldig, og alternativt hopp over deres skriptbekreftelse (0 for å bekrefte alle, forvalg: %s, testnett: %s)</translation>
+        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, ai: %s)</source>
+        <translation>Hvis denne blokken er i kjeden, anta at den og dens opphav er gyldig, og alternativt hopp over deres skriptbekreftelse (0 for å bekrefte alle, forvalg: %s, ait: %s)</translation>
     </message>
     <message>
         <source>Maximum allowed median peer time offset adjustment. Local perspective of time may be influenced by peers forward or backward by this amount. (default: %u seconds)</source>
@@ -3978,12 +3978,12 @@
         <translation>Nøkkelpuljen gikk tom, kall keypoolrefill først</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Lytt etter JSON-RPC tilkoblinger på &lt;port&gt; (standardverdi: %u eller testnett: %u)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Lytt etter JSON-RPC tilkoblinger på &lt;port&gt; (standardverdi: %u eller ait: %u)</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Lytt etter tilkoblinger på &lt;port&gt; (standardverdi: %u eller testnett: %u)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Lytt etter tilkoblinger på &lt;port&gt; (standardverdi: %u eller ait: %u)</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>

@@ -904,7 +904,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
+        <source>[ai]</source>
         <translation>[testavimotinklas]</translation>
     </message>
 </context>

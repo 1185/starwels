@@ -1,6 +1,6 @@
-# List of fixed seed nodes for testnet
+# List of fixed seed nodes for ai
 
-91.240.86.126:18353
-94.102.26.117:18353
+91.240.86.126:8333
+94.102.26.117:8333
 
 # Onion nodes

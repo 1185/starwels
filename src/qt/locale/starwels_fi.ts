@@ -2476,8 +2476,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <source>[ai]</source>
+        <translation>[ai]</translation>
     </message>
 </context>
 <context>
@@ -3118,8 +3118,8 @@
         <translation>Muistissa pidettävien rahansiirtojen määrä tiiviiden lohkojen muodostusta varten (oletus: %u)</translation>
     </message>
     <message>
-        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, testnet: %s)</source>
-        <translation>Jos tämä lohko on ketjussa, oleta lohkon sekä sen edeltäjien olevan kelvollisia ja mahdollisesti ohita niiden skriptin vahvistus (0 vahvistaa kaiken, oletus: %s, testnet: %s)</translation>
+        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, ai: %s)</source>
+        <translation>Jos tämä lohko on ketjussa, oleta lohkon sekä sen edeltäjien olevan kelvollisia ja mahdollisesti ohita niiden skriptin vahvistus (0 vahvistaa kaiken, oletus: %s, ai: %s)</translation>
     </message>
     <message>
         <source>Please check that your computer's date and time are correct! If your clock is wrong, %s will not work properly.</source>
@@ -3726,12 +3726,12 @@
         <translation>Avainallas tyhjentyi, ole hyvä ja kutsu keypoolrefill ensin</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Kuuntele JSON-RPC-yhteyksiä portissa &lt;port&gt; (oletus: %u tai testnet: %u)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Kuuntele JSON-RPC-yhteyksiä portissa &lt;port&gt; (oletus: %u tai ai: %u)</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Kuuntele yhteyksiä portissa &lt;port&gt; (oletus: %u tai testnet: %u)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Kuuntele yhteyksiä portissa &lt;port&gt; (oletus: %u tai ai: %u)</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>

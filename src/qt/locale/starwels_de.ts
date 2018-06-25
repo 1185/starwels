@@ -2540,8 +2540,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
-        <translation>[Testnetz]</translation>
+        <source>[ai]</source>
+        <translation>[Aiz]</translation>
     </message>
 </context>
 <context>
@@ -3222,8 +3222,8 @@
         <translation>Zusätzliche Transaktionen für kompakten Block-Nachbau im Speicher vorhalten (default: %u)</translation>
     </message>
     <message>
-        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, testnet: %s)</source>
-        <translation>Sofern dieser Block Bestandteil der Blockchain ist, nehme an, dass er und seine Vorgänger gültig sind und überspringe ggf. dessen Skriptverifikation (0 um alle zu verifizieren, default: %s, testnet: %s)</translation>
+        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, ai: %s)</source>
+        <translation>Sofern dieser Block Bestandteil der Blockchain ist, nehme an, dass er und seine Vorgänger gültig sind und überspringe ggf. dessen Skriptverifikation (0 um alle zu verifizieren, default: %s, ai: %s)</translation>
     </message>
     <message>
         <source>Maximum allowed median peer time offset adjustment. Local perspective of time may be influenced by peers forward or backward by this amount. (default: %u seconds)</source>
@@ -3974,12 +3974,12 @@
         <translation>Der Keypool ist erschöpft. Bitte rufen Sie zunächst keypoolrefill auf.</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>&lt;port&gt; nach JSON-RPC-Verbindungen abhören (Standard: %u oder Testnetz: %u)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>&lt;port&gt; nach JSON-RPC-Verbindungen abhören (Standard: %u oder Aiz: %u)</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>&lt;port&gt; nach Verbindungen abhören (Standard: %u oder Testnetz: %u)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>&lt;port&gt; nach Verbindungen abhören (Standard: %u oder Aiz: %u)</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>

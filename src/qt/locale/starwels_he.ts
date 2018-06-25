@@ -2432,7 +2432,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
+        <source>[ai]</source>
         <translation>[רשת-בדיקה]</translation>
     </message>
 </context>
@@ -3266,11 +3266,11 @@
         <translation>לכלול את כתובת ה־IP בפלט ניפוי השגיאות (בררת מחדל: %u)</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
         <translation>האזנה לחיבורי JSON-RPC דרך &lt;port&gt; (בררת מחדל: %u או ברשת הבדיקה: %u)</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
         <translation>האזנה לחיבורים על גבי &lt;port&gt; (בררת מחדל: %u או לרשת הבדיקה: %u)</translation>
     </message>
     <message>

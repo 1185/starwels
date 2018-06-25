@@ -425,7 +425,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
+        <source>[ai]</source>
         <translation>[टेस्टनेट]</translation>
     </message>
 </context>

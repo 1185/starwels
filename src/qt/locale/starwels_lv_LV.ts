@@ -1130,8 +1130,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnets]</translation>
+        <source>[ai]</source>
+        <translation>[ais]</translation>
     </message>
 </context>
 <context>

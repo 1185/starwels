@@ -2553,7 +2553,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
+        <source>[ai]</source>
         <translation>[testovacia sieť]</translation>
     </message>
 </context>
@@ -3235,8 +3235,8 @@
         <translation>Počet extra transakcíí, ktoré sa majú držať v pamäti pre účely rekonštrukcie kompaktných blokov (predvolené: %u)</translation>
     </message>
     <message>
-        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, testnet: %s)</source>
-        <translation>Pokiaľ je tento blok v reťazci blokov, tak predpokladať, že on i jeho následníci sú platní, a potenciálne preskočiť overovanie ich skriptov (0 = overovať všetko, predvolené: %s, testnet: %s)</translation>
+        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, ai: %s)</source>
+        <translation>Pokiaľ je tento blok v reťazci blokov, tak predpokladať, že on i jeho následníci sú platní, a potenciálne preskočiť overovanie ich skriptov (0 = overovať všetko, predvolené: %s, ai: %s)</translation>
     </message>
     <message>
         <source>Maximum allowed median peer time offset adjustment. Local perspective of time may be influenced by peers forward or backward by this amount. (default: %u seconds)</source>
@@ -3991,11 +3991,11 @@
         <translation>Vyčerpal sa zásobník kľúčov, zavolať najskôr keypoolrefill</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
         <translation>Počúvať JSON-RPC pripojenia na &lt;port&gt; (predvolené: %u alebo testovacia sieť: %u)</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
         <translation>Počúvať pripojenia na &lt;port&gt; (predvolené: %u alebo testovacia sieť: %u)</translation>
     </message>
     <message>

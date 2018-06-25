@@ -634,7 +634,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
+        <source>[ai]</source>
         <translation>[testo rrjetin]</translation>
     </message>
 </context>

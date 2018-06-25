@@ -2552,8 +2552,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <source>[ai]</source>
+        <translation>[ai]</translation>
     </message>
 </context>
 <context>
@@ -3230,8 +3230,8 @@
         <translation>Exécuter la commande lorsqu’une transaction de porte-monnaie change (%s dans la commande est remplacée par TxID)</translation>
     </message>
     <message>
-        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, testnet: %s)</source>
-        <translation>Si ce bloc est dans la chaîne, supposer qu’il est valide, ainsi que ces ancêtres, et ignorer potentiellement la vérification de leur script (0 pour tout vérifier, valeur par défaut : %s, réseau de test : %s)</translation>
+        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, ai: %s)</source>
+        <translation>Si ce bloc est dans la chaîne, supposer qu’il est valide, ainsi que ces ancêtres, et ignorer potentiellement la vérification de leur script (0 pour tout vérifier, valeur par défaut : %s, ai : %s)</translation>
     </message>
     <message>
         <source>Maximum allowed median peer time offset adjustment. Local perspective of time may be influenced by peers forward or backward by this amount. (default: %u seconds)</source>
@@ -3978,11 +3978,11 @@
         <translation>La réserve de clés est épuisée, veuillez d’abord appeler « keypoolrefill »</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
         <translation>Écouter les connexions JSON-RPC sur &lt;port&gt; (par défaut : %u ou tesnet : %u)</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
         <translation>Écouter les connexions sur &lt;port&gt; (par défaut : %u ou tesnet : %u)</translation>
     </message>
     <message>

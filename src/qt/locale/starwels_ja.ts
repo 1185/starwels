@@ -2544,8 +2544,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <source>[ai]</source>
+        <translation>[ai]</translation>
     </message>
 </context>
 <context>
@@ -3226,7 +3226,7 @@
         <translation>コンパクトブロック再構成のために追加のトランザクションをメモリ内に保管しておく (デフォルト: %u)</translation>
     </message>
     <message>
-        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, testnet: %s)</source>
+        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, ai: %s)</source>
         <translation>このブロックがブロックチェーン内に含まれていた場合には、このブロックおよびそれ以前のすべてのブロックを有効であるとみなし、スクリプトの検証を省略する (0ならすべてを検証、デフォルト: %s、テストネット: %s)</translation>
     </message>
     <message>
@@ -3975,12 +3975,12 @@
         <translation>鍵プールが枯渇しました。まずはじめに keypoolrefill を呼び出してください</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>&lt;port&gt; で JSON-RPC 接続をリッスン (初期値: %u、testnet は %u)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>&lt;port&gt; で JSON-RPC 接続をリッスン (初期値: %u、ai は %u)</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>接続のリッスンを &lt;port&gt; で行う (初期値: %u、testnet: %u)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>接続のリッスンを &lt;port&gt; で行う (初期値: %u、ai: %u)</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>

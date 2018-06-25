@@ -2508,8 +2508,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <source>[ai]</source>
+        <translation>[ai]</translation>
     </message>
 </context>
 <context>
@@ -3158,8 +3158,8 @@
         <translation>Transaccions addicionals a conservar en memòria per a les reconstruccions de blocs compactes (per defecte: %u)</translation>
     </message>
     <message>
-        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, testnet: %s)</source>
-        <translation>Si aquest bloc es troba a la cadena, suposa que ell i els seus avantpassats són vàlids i que es pot saltar la seva verificació d'script (0 per verificar-ho tot, per defecte: %s, testnet: %s)</translation>
+        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, ai: %s)</source>
+        <translation>Si aquest bloc es troba a la cadena, suposa que ell i els seus avantpassats són vàlids i que es pot saltar la seva verificació d'script (0 per verificar-ho tot, per defecte: %s, ai: %s)</translation>
     </message>
     <message>
         <source>Maximum allowed median peer time offset adjustment. Local perspective of time may be influenced by peers forward or backward by this amount. (default: %u seconds)</source>
@@ -3874,12 +3874,12 @@
         <translation>S'ha acabat el Keypool, si us plau, crideu a keypoolrefill primer</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Escolta les connexions JSON-RPC en &lt;port&gt; (per defecte: %u o testnet: %u)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Escolta les connexions JSON-RPC en &lt;port&gt; (per defecte: %u o ai: %u)</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Escolta les connexions en &lt;port&gt; (per defecte: %u o testnet: %u)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: %u or ai: %u)</source>
+        <translation>Escolta les connexions en &lt;port&gt; (per defecte: %u o ai: %u)</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>

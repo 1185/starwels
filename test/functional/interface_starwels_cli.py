@@ -53,7 +53,7 @@ class TestStarwelsCli(StarwelsTestFramework):
         assert_equal(cli_get_info['connections'], network_info['connections'])
         assert_equal(cli_get_info['proxy'], network_info['networks'][0]['proxy'])
         assert_equal(cli_get_info['difficulty'], blockchain_info['difficulty'])
-        assert_equal(cli_get_info['testnet'], blockchain_info['chain'] == "test")
+        assert_equal(cli_get_info['ai'], blockchain_info['chain'] == "test")
         assert_equal(cli_get_info['balance'], wallet_info['balance'])
         assert_equal(cli_get_info['keypoololdest'], wallet_info['keypoololdest'])
         assert_equal(cli_get_info['keypoolsize'], wallet_info['keypoolsize'])

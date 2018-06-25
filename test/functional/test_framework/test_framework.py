@@ -186,7 +186,7 @@ class StarwelsTestFramework():
             self._initialize_chain()
 
     def setup_network(self):
-        """Override this method to customize test network topology"""
+        """Override this method to customize ai network topology"""
         self.setup_nodes()
 
         # Connect the nodes as a "chain".  This allows us
