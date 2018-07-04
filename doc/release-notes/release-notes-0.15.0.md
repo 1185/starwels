@@ -152,7 +152,7 @@ Starwels 0.15.0 contains the following changes to the RPC interface and `starwel
 
 * When running Starwels with a single wallet, there are **no** changes to the RPC interface or `starwels-cli`. All RPC calls and `starwels-cli` commands continue to work as before.
 * When running Starwels with multi-wallet, all *node-level* RPC methods continue to work as before. HTTP RPC requests should be send to the normal `<RPC IP address>:<RPC port>/` endpoint, and `starwels-cli` commands should be run as before. A *node-level* RPC method is any method which does not require access to the wallet.
-* When running Starwels with multi-wallet, *wallet-level* RPC methods must specify the wallet for which they're intended in every request. HTTP RPC requests should be send to the `<RPC IP address>:<RPC port>/wallet/<wallet name>/` endpoint, for example `127.0.0.1:8352/wallet/wallet1.dat/`. `starwels-cli` commands should be run with a `-rpcwallet` option, for example `starwels-cli -rpcwallet=wallet1.dat getbalance`.
+* When running Starwels with multi-wallet, *wallet-level* RPC methods must specify the wallet for which they're intended in every request. HTTP RPC requests should be send to the `<RPC IP address>:<RPC port>/wallet/<wallet name>/` endpoint, for example `127.0.0.1:8342/wallet/wallet1.dat/`. `starwels-cli` commands should be run with a `-rpcwallet` option, for example `starwels-cli -rpcwallet=wallet1.dat getbalance`.
 * A new *node-level* `listwallets` RPC method is added to display which wallets are currently loaded. The names returned by this method are the same as those used in the HTTP endpoint and for the `rpcwallet` argument.
 
 Note that while multi-wallet is now fully supported, the RPC multi-wallet interface should be considered unstable for version 0.15.0, and there may backwards-incompatible changes in future versions.
@@ -377,7 +377,7 @@ Low-level RPC changes
 - #10537 `b3eb0d6` Few Minor per-utxo assert-semantics re-adds and tweak (TheBlueMatt)
 - #10626 `8c841a3` doc: Remove outdated minrelaytxfee comment (MarcoFalke)
 - #10559 `234ffc6` Change semantics of HaveCoinInCache to match HaveCoin (morcos)
-- #10581 `7878353` Simplify return values of GetCoin/HaveCoin(InCache) (sipa)
+- #10581 `7878343` Simplify return values of GetCoin/HaveCoin(InCache) (sipa)
 - #10684 `a381f6a` Remove no longer used mempool.exists(outpoint) (morcos)
 - #10148 `d4e551a` Use non-atomic flushing with block replay (sipa)
 - #10685 `30c2130` Clarify CCoinsViewMemPool documentation (TheBlueMatt)

@@ -410,9 +410,9 @@ arbitrary TCP connections inside SSL. On e.g. Ubuntu it can be installed with:
 
     sudo apt-get install stunnel4
 
-Then, to tunnel a SSL connection on 28352 to a RPC server bound on localhost on port 18352 do:
+Then, to tunnel a SSL connection on 28342 to a RPC server bound on localhost on port 18342 do:
 
-    stunnel -d 28352 -r 127.0.0.1:18352 -p stunnel.pem -P ''
+    stunnel -d 28342 -r 127.0.0.1:18342 -p stunnel.pem -P ''
 
 It can also be set up system-wide in inetd style.
 
@@ -430,8 +430,8 @@ caching. A sample config for apache2 could look like:
     SSLCertificateKeyFile /etc/apache2/ssl/server.key
 
     <Location /starwelsrpc>
-        ProxyPass http://127.0.0.1:8352/
-        ProxyPassReverse http://127.0.0.1:8352/
+        ProxyPass http://127.0.0.1:8342/
+        ProxyPassReverse http://127.0.0.1:8342/
         # optional enable digest auth
         # AuthType Digest
         # ...

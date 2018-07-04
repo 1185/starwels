@@ -8,10 +8,10 @@
 
     Starwels should be started with the command line arguments:
         starwelsd -ai -daemon \
-                -zmqpubhashblock=tcp://127.0.0.1:28352 \
-                -zmqpubrawtx=tcp://127.0.0.1:28352 \
-                -zmqpubhashtx=tcp://127.0.0.1:28352 \
-                -zmqpubhashblock=tcp://127.0.0.1:28352
+                -zmqpubhashblock=tcp://127.0.0.1:28342 \
+                -zmqpubrawtx=tcp://127.0.0.1:28342 \
+                -zmqpubhashtx=tcp://127.0.0.1:28342 \
+                -zmqpubhashblock=tcp://127.0.0.1:28342
 
     We use the asyncio library here.  `self.handle()` installs itself as a
     future at the end of the function.  Since it never returns with the event
@@ -38,7 +38,7 @@ if not (sys.version_info.major >= 3 and sys.version_info.minor >= 4):
     print("This example only works with Python 3.4 and greater")
     exit(1)
 
-port = 28352
+port = 28342
 
 class ZMQHandler():
     def __init__(self):
