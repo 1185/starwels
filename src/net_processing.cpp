@@ -30,6 +30,8 @@
 #include <utilmoneystr.h>
 #include <utilstrencodings.h>
 
+#include <memory>
+
 #if defined(NDEBUG)
 # error "Starwels cannot be compiled without assertions."
 #endif
