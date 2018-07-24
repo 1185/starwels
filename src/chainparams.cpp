@@ -113,6 +113,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x7e2c59b1404833991962e7e6d95a1d4f81f03fffeaf79c0d25d97d24182db485"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
+        vSeeds.emplace_back("127.0.0.1:43110/139H5wy8H3tgXwJ33mXpwmm4oCfjKUo7dY", true); // ZeroNet
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,0);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
@@ -203,6 +204,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
+        vSeeds.emplace_back("127.0.0.1:43110/139H5wy8H3tgXwJ33mXpwmm4oCfjKUo7dY", true);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,0);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
