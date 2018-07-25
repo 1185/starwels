@@ -1,6 +1,6 @@
 # List of fixed seed nodes for ai
 
+51.15.94.149:8333
 91.240.86.126:8333
-94.102.26.117:8333
 
 # Onion nodes
