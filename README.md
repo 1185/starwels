@@ -35,7 +35,7 @@ The developer [mailing list](https://lists.linuxfoundation.org/mailman/listinfo/
 should be used to discuss complicated or controversial changes before working
 on a patch set.
 
-Developer can be found on Discord at #M8FJhPh.
+Developer can be found on Discord at #M8FJhPh. If you don't have an Discord client use [webchat here](http://discord.gg/M8FJhPh).
 
 Testing
 -------

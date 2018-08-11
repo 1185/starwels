@@ -5,8 +5,6 @@ Setup
 ---------------------
 Starwels is the original Starwels client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Starwels transactions (which is currently more than 100 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download Starwels, visit [GitHub](https://github.com/starwels/starwels/releases).
-
 Running
 ---------------------
 The following are some helpful notes on how to run Starwels on your native platform.
@@ -24,13 +22,13 @@ Unpack the files into a directory, and then run starwels-qt.exe.
 
 ### OS X
 
-Drag Starwels-Core to your applications folder, and then run Starwels-Core.
+Drag Starwels to your applications folder, and then run Starwels.
 
 ### Need Help?
 
 * See the documentation at the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Main_Page)
 for help and more information.
-* Ask for help on [#M8FJhPh](https://discord.gg/M8FJhPh) on Discord. If you don't have an Discord client use [webchat here](http://discord.gg/M8FJhPh).
+* Ask for help on #M8FJhPh on Discord. If you don't have an Discord client use [webchat here](http://discord.gg/M8FJhPh).
 * Ask for help on the [BitcoinTalk](https://bitcointalk.org/) forums, in the [Technical Support board](https://bitcointalk.org/index.php?board=4.0).
 
 Building
