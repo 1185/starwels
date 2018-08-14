@@ -142,10 +142,10 @@ unauthenticated access to public node data.
 It is served on the same port as RPC, but does not need a password, and uses
 plain HTTP instead of JSON-RPC.
 
-Assuming a local RPC server running on port 8332, it is possible to request:
-- Blocks: http://localhost:8332/rest/block/*HASH*.*EXT*
-- Blocks without transactions: http://localhost:8332/rest/block/notxdetails/*HASH*.*EXT*
-- Transactions (requires `-txindex`): http://localhost:8332/rest/tx/*HASH*.*EXT*
+Assuming a local RPC server running on port 8342, it is possible to request:
+- Blocks: http://localhost:8342/rest/block/*HASH*.*EXT*
+- Blocks without transactions: http://localhost:8342/rest/block/notxdetails/*HASH*.*EXT*
+- Transactions (requires `-txindex`): http://localhost:8342/rest/tx/*HASH*.*EXT*
 
 In every case, *EXT* can be `bin` (for raw binary data), `hex` (for hex-encoded
 binary) or `json`.
@@ -622,7 +622,7 @@ Tests:
 - `263b65e` tests: run sanity checks in tests too
 
 Miscellaneous:
-- `122549f` Fix incorrect checkpoint data for ai3
+- `122549f` Fix incorrect checkpoint data for ai
 - `5bd02cf` Log used config file to debug.log on startup
 - `68ba85f` Updated Debian example starwels.conf with config from wiki + removed some cruft and updated comments
 - `e5ee8f0` Remove -beta suffix

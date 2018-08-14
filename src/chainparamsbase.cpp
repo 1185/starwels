@@ -12,7 +12,7 @@
 #include <assert.h>
 
 const std::string CBaseChainParams::MAIN = "main";
-const std::string CBaseChainParams::AI = "test";
+const std::string CBaseChainParams::AI = "main";
 const std::string CBaseChainParams::REGTEST = "regtest";
 
 void SetupChainParamsBaseOptions()
@@ -33,9 +33,9 @@ const CBaseChainParams& BaseParams()
 std::unique_ptr<CBaseChainParams> CreateBaseChainParams(const std::string& chain)
 {
     if (chain == CBaseChainParams::MAIN)
-        return MakeUnique<CBaseChainParams>("", 8332);
+        return MakeUnique<CBaseChainParams>("", 8342);
     else if (chain == CBaseChainParams::AI)
-        return MakeUnique<CBaseChainParams>("ai3", 18332);
+        return MakeUnique<CBaseChainParams>("ai", 8332);
     else if (chain == CBaseChainParams::REGTEST)
         return MakeUnique<CBaseChainParams>("regtest", 18443);
     else

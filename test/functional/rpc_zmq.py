@@ -11,7 +11,7 @@ from test_framework.util import assert_equal
 
 class RPCZMQTest(StarwelsTestFramework):
 
-    address = "tcp://127.0.0.1:28332"
+    address = "tcp://127.0.0.1:28342"
 
     def set_test_params(self):
         self.num_nodes = 1

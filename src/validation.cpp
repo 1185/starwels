@@ -1888,8 +1888,8 @@ bool CChainState::ConnectBlock(const CBlock& block, CValidationState& state, CBl
     // Now that the whole chain is irreversibly beyond that time it is applied to all blocks except the
     // two in the chain that violate it. This prevents exploiting the issue against nodes during their
     // initial block download.
-    bool fEnforceBIP30 = !((pindex->nHeight==91842 && pindex->GetBlockHash() == uint256S("0x00000000000a4d0a398161ffc163c503763b1f4360639393e0e4c8e300e0caec")) ||
-                           (pindex->nHeight==91880 && pindex->GetBlockHash() == uint256S("0x00000000000743f190a18c5577a3c2d2a1f610ae9601ac046a38084ccb7cd721")));
+    bool fEnforceBIP30 = !((pindex->nHeight==91842 && pindex->GetBlockHash() == uint256S("0x00000000cfe28d641b5f5bf99cfa68deb86c17fabd559ae04865293a448e2fc5")) ||
+                           (pindex->nHeight==91880 && pindex->GetBlockHash() == uint256S("0x00000000ca86384130ea1acae34f73aa38a10023f4ecb0410ef2ea66729a7398")));
 
     // Once BIP34 activated it was not possible to create new duplicate coinbases and thus other than starting
     // with the 2 existing duplicate coinbase pairs, not possible to create overwriting txs.  But by the
@@ -1943,7 +1943,7 @@ bool CChainState::ConnectBlock(const CBlock& block, CValidationState& state, CBl
     // edge case when manipulating the UTXO and it would be simpler not to have
     // another edge case to deal with.
 
-    // ai3 has no blocks before the BIP34 height with indicated heights
+    // ai has no blocks before the BIP34 height with indicated heights
     // post BIP34 before approximately height 486,000,000 and presumably will
     // be reset before it reaches block 1,983,702 and starts doing unnecessary
     // BIP30 checking again.

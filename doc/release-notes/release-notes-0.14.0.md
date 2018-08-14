@@ -149,7 +149,7 @@ Some examples:
 
     src/starwels-cli -named help command="help"
     src/starwels-cli -named getblockhash height=0
-    src/starwels-cli -named getblock blockhash=000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f
+    src/starwels-cli -named getblock blockhash=000000003d69a915e9da53348c5c272978bb743442e3a6341c11061c125811a2
     src/starwels-cli -named sendtoaddress address="(snip)" amount="1.0" subtractfeefromamount=true
 
 The order of arguments doesn't matter in this case. Named arguments are also
