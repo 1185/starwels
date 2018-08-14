@@ -1,36 +1,36 @@
 #!/usr/bin/env bash
 #
-#  bitcoind The bitcoin core server.
+#  starwelsd The starwels server.
 #
 #
 # chkconfig: 345 80 20
-# description: bitcoind
-# processname: bitcoind
+# description: starwelsd
+# processname: starwelsd
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/bitcoind, see below
-if [ -f /etc/sysconfig/bitcoind ]; then
-        . /etc/sysconfig/bitcoind
+# you can override defaults in /etc/sysconfig/starwelsd, see below
+if [ -f /etc/sysconfig/starwelsd ]; then
+        . /etc/sysconfig/starwelsd
 fi
 
 RETVAL=0
 
-prog=bitcoind
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/bitcoind
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/bitcoind}
+prog=starwelsd
+# you can override the lockfile via STARWELSD_LOCKFILE in /etc/sysconfig/starwelsd
+lockfile=${STARWELSD_LOCKFILE-/var/lock/subsys/starwelsd}
 
-# bitcoind defaults to /usr/bin/bitcoind, override with BITCOIND_BIN
-bitcoind=${BITCOIND_BIN-/usr/bin/bitcoind}
+# starwelsd defaults to /usr/bin/starwelsd, override with STARWELSD_BIN
+starwelsd=${STARWELSD_BIN-/usr/bin/starwelsd}
 
-# bitcoind opts default to -disablewallet, override with BITCOIND_OPTS
-bitcoind_opts=${BITCOIND_OPTS--disablewallet}
+# starwelsd opts default to -disablewallet, override with STARWELSD_OPTS
+starwelsd_opts=${STARWELSD_OPTS--disablewallet}
 
 start() {
     echo -n $"Starting $prog: "
-    daemon $DAEMONOPTS $bitcoind $bitcoind_opts
+    daemon $DAEMONOPTS $starwelsd $starwelsd_opts
     RETVAL=$?
     echo
     [ $RETVAL -eq 0 ] && touch $lockfile

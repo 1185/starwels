@@ -1,9 +1,9 @@
-// Copyright (c) 2011-2018 The Bitcoin Core developers
+// Copyright (c) 2011-2018 The Starwels developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_WALLETMODEL_H
-#define BITCOIN_QT_WALLETMODEL_H
+#ifndef STARWELS_QT_WALLETMODEL_H
+#define STARWELS_QT_WALLETMODEL_H
 
 #include <amount.h>
 #include <key.h>
@@ -105,7 +105,7 @@ public:
     }
 };
 
-/** Interface to Bitcoin wallet from Qt view code. */
+/** Interface to Starwels wallet from Qt view code. */
 class WalletModel : public QObject
 {
     Q_OBJECT
@@ -279,4 +279,4 @@ public Q_SLOTS:
     void pollBalanceChanged();
 };
 
-#endif // BITCOIN_QT_WALLETMODEL_H
+#endif // STARWELS_QT_WALLETMODEL_H

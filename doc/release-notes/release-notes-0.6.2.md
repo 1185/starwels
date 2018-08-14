@@ -1,4 +1,4 @@
-Bitcoin version 0.6.2 is now available for download at:
+Starwels version 0.6.2 is now available for download at:
 http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.6.2/
 
 This is a bug-fix and code-cleanup release, with no major new features.
@@ -31,7 +31,7 @@ Source codebase changes:
 - Several source code portability fixes, e.g. FreeBSD
 
 JSON-RPC interface changes:
-- addmultisigaddress enabled for mainnet (previously only enabled for testnet)
+- addmultisigaddress enabled for mainnet (previously only enabled for ai)
 
 Network protocol changes:
 - protocol version 60001

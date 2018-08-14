@@ -2,41 +2,41 @@
 
 # backward compatibility for existing gentoo layout 
 #
-if [ -d "/var/lib/bitcoin/.bitcoin" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/bitcoin/.bitcoin"
+if [ -d "/var/lib/starwels/.starwels" ]; then
+	STARWELSD_DEFAULT_DATADIR="/var/lib/starwels/.starwels"
 else
-	BITCOIND_DEFAULT_DATADIR="/var/lib/bitcoind"
+	STARWELSD_DEFAULT_DATADIR="/var/lib/starwelsd"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/bitcoin/bitcoin.conf}
-BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/bitcoind}
-BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/bitcoind.pid}
-BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
-BITCOIND_USER=${BITCOIND_USER:-${BITCOIN_USER:-bitcoin}}
-BITCOIND_GROUP=${BITCOIND_GROUP:-bitcoin}
-BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/bitcoind}
-BITCOIND_NICE=${BITCOIND_NICE:-${NICELEVEL:-0}}
-BITCOIND_OPTS="${BITCOIND_OPTS:-${BITCOIN_OPTS}}"
+STARWELSD_CONFIGFILE=${STARWELSD_CONFIGFILE:-/etc/starwels/starwels.conf}
+STARWELSD_PIDDIR=${STARWELSD_PIDDIR:-/var/run/starwelsd}
+STARWELSD_PIDFILE=${STARWELSD_PIDFILE:-${STARWELSD_PIDDIR}/starwelsd.pid}
+STARWELSD_DATADIR=${STARWELSD_DATADIR:-${STARWELSD_DEFAULT_DATADIR}}
+STARWELSD_USER=${STARWELSD_USER:-${STARWELS_USER:-starwels}}
+STARWELSD_GROUP=${STARWELSD_GROUP:-starwels}
+STARWELSD_BIN=${STARWELSD_BIN:-/usr/bin/starwelsd}
+STARWELSD_NICE=${STARWELSD_NICE:-${NICELEVEL:-0}}
+STARWELSD_OPTS="${STARWELSD_OPTS:-${STARWELS_OPTS}}"
 
-name="Bitcoin Core Daemon"
-description="Bitcoin cryptocurrency P2P network daemon"
+name="Starwels Daemon"
+description="Starwels cryptocurrency P2P network daemon"
 
-command="/usr/bin/bitcoind"
-command_args="-pid=\"${BITCOIND_PIDFILE}\" \
-		-conf=\"${BITCOIND_CONFIGFILE}\" \
-		-datadir=\"${BITCOIND_DATADIR}\" \
+command="/usr/bin/starwelsd"
+command_args="-pid=\"${STARWELSD_PIDFILE}\" \
+		-conf=\"${STARWELSD_CONFIGFILE}\" \
+		-datadir=\"${STARWELSD_DATADIR}\" \
 		-daemon \
-		${BITCOIND_OPTS}"
+		${STARWELSD_OPTS}"
 
-required_files="${BITCOIND_CONFIGFILE}"
-start_stop_daemon_args="-u ${BITCOIND_USER} \
-			-N ${BITCOIND_NICE} -w 2000"
-pidfile="${BITCOIND_PIDFILE}"
+required_files="${STARWELSD_CONFIGFILE}"
+start_stop_daemon_args="-u ${STARWELSD_USER} \
+			-N ${STARWELSD_NICE} -w 2000"
+pidfile="${STARWELSD_PIDFILE}"
 
 # The retry schedule to use when stopping the daemon. Could be either
 # a timeout in seconds or multiple signal/timeout pairs (like
 # "SIGKILL/180 SIGTERM/300")
-retry="${BITCOIND_SIGTERM_TIMEOUT}"
+retry="${STARWELSD_SIGTERM_TIMEOUT}"
 
 depend() {
 	need localmount net
@@ -50,29 +50,29 @@ start_pre() {
 	checkpath \
 	-d \
 	--mode 0750 \
-	--owner "${BITCOIND_USER}:${BITCOIND_GROUP}" \
-	"${BITCOIND_DATADIR}"
+	--owner "${STARWELSD_USER}:${STARWELSD_GROUP}" \
+	"${STARWELSD_DATADIR}"
 
 	checkpath \
 	-d \
 	--mode 0755 \
-	--owner "${BITCOIND_USER}:${BITCOIND_GROUP}" \
-	"${BITCOIND_PIDDIR}"
+	--owner "${STARWELSD_USER}:${STARWELSD_GROUP}" \
+	"${STARWELSD_PIDDIR}"
 
 	checkpath -f \
-	-o ${BITCOIND_USER}:${BITCOIND_GROUP} \
+	-o ${STARWELSD_USER}:${STARWELSD_GROUP} \
 	-m 0660 \
-	${BITCOIND_CONFIGFILE}
+	${STARWELSD_CONFIGFILE}
 
 	checkconfig || return 1
 }
 
 checkconfig()
 {
-	if ! grep -qs '^rpcpassword=' "${BITCOIND_CONFIGFILE}" ; then
+	if ! grep -qs '^rpcpassword=' "${STARWELSD_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run bitcoind."
-		eerror "The setting must appear in ${BITCOIND_CONFIGFILE}"
+		eerror "ERROR: You must set a secure rpcpassword to run starwelsd."
+		eerror "The setting must appear in ${STARWELSD_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "
 		eerror "and must not be the same as the rpcuser setting."
@@ -84,7 +84,7 @@ checkconfig()
 		eerror "It is recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"Bitcoin Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"Starwels Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

@@ -48,7 +48,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>StarwelsGUI</name>
     <message>
         <source>&amp;Transactions</source>
         <translation>&amp;Транзакциялар</translation>
@@ -70,8 +70,8 @@
         <translation>Құпия сөзді өзгерту</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Биткоин</translation>
+        <source>Starwels</source>
+        <translation>Starwels</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -169,8 +169,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
-        <translation>Биткоин</translation>
+        <source>Starwels</source>
+        <translation>Starwels</translation>
     </message>
     <message>
         <source>Error</source>
@@ -310,7 +310,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>starwels</name>
     <message>
         <source>Information</source>
         <translation>Информация</translation>

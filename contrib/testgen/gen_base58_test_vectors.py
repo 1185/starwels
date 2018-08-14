@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2012-2018 The Bitcoin Core developers
+# Copyright (c) 2012-2018 The Starwels developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 '''
@@ -25,7 +25,7 @@ SCRIPT_ADDRESS_TEST = 196
 PRIVKEY = 128
 PRIVKEY_TEST = 239
 
-metadata_keys = ['isPrivkey', 'isTestnet', 'addrType', 'isCompressed']
+metadata_keys = ['isPrivkey', 'isAi', 'addrType', 'isCompressed']
 # templates for valid sequences
 templates = [
   # prefix, payload_size, suffix, metadata

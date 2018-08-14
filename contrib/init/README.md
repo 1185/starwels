@@ -1,11 +1,11 @@
 Sample configuration files for:
 ```
-SystemD: bitcoind.service
-Upstart: bitcoind.conf
-OpenRC:  bitcoind.openrc
-         bitcoind.openrcconf
-CentOS:  bitcoind.init
-macOS:    org.bitcoin.bitcoind.plist
+SystemD: starwelsd.service
+Upstart: starwelsd.conf
+OpenRC:  starwelsd.openrc
+         starwelsd.openrcconf
+CentOS:  starwelsd.init
+macOS:    org.starwels.starwelsd.plist
 ```
 have been made available to assist packagers in creating node packages here.
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2017-2018 The Bitcoin Core developers
+# Copyright (c) 2017-2018 The Starwels developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """An example functional test
@@ -22,7 +22,7 @@ from test_framework.mininode import (
     msg_block,
     msg_getdata,
 )
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import StarwelsTestFramework
 from test_framework.util import (
     assert_equal,
     connect_nodes,
@@ -64,11 +64,11 @@ def custom_function():
 
     If this function is more generally useful for other tests, consider
     moving it to a module in test_framework."""
-    # self.log.info("running custom_function")  # Oops! Can't run self.log outside the BitcoinTestFramework
+    # self.log.info("running custom_function")  # Oops! Can't run self.log outside the StarwelsTestFramework
     pass
 
-class ExampleTest(BitcoinTestFramework):
-    # Each functional test is a subclass of the BitcoinTestFramework class.
+class ExampleTest(StarwelsTestFramework):
+    # Each functional test is a subclass of the StarwelsTestFramework class.
 
     # Override the set_test_params(), add_options(), setup_chain(), setup_network()
     # and setup_nodes() methods to customize the test setup as required.
@@ -97,7 +97,7 @@ class ExampleTest(BitcoinTestFramework):
     #     pass
 
     def setup_network(self):
-        """Setup the test network topology
+        """Setup the ai network topology
 
         Often you won't need to override this, since the standard network topology
         (linear: node0 <-> node1 <-> node2 <-> ...) is fine for most tests.
@@ -123,7 +123,7 @@ class ExampleTest(BitcoinTestFramework):
 
         Define it in a method here because you're going to use it repeatedly.
         If you think it's useful in general, consider moving it to the base
-        BitcoinTestFramework class so other tests can use it."""
+        StarwelsTestFramework class so other tests can use it."""
 
         self.log.info("Running custom_method")
 

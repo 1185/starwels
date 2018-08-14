@@ -1,4 +1,4 @@
-// Copyright (c) 2011-2018 The Bitcoin Core developers
+// Copyright (c) 2011-2018 The Starwels developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -9,7 +9,7 @@
 #include <sync.h>
 #include <utilstrencodings.h>
 #include <utilmoneystr.h>
-#include <test/test_bitcoin.h>
+#include <test/test_starwels.h>
 
 #include <stdint.h>
 #include <vector>
@@ -544,23 +544,23 @@ BOOST_AUTO_TEST_CASE(util_GetArg)
 BOOST_AUTO_TEST_CASE(util_GetChainName)
 {
     TestArgsManager test_args;
-    const char* avail_args[] = {"-testnet", "-regtest"};
+    const char* avail_args[] = {"-ai", "-regtest"};
     test_args.SetupArgs(2, avail_args);
 
-    const char* argv_testnet[] = {"cmd", "-testnet"};
+    const char* argv_ai[] = {"cmd", "-ai"};
     const char* argv_regtest[] = {"cmd", "-regtest"};
-    const char* argv_test_no_reg[] = {"cmd", "-testnet", "-noregtest"};
-    const char* argv_both[] = {"cmd", "-testnet", "-regtest"};
+    const char* argv_test_no_reg[] = {"cmd", "-ai", "-noregtest"};
+    const char* argv_both[] = {"cmd", "-ai", "-regtest"};
 
-    // equivalent to "-testnet"
-    // regtest in testnet section is ignored
-    const char* testnetconf = "testnet=1\nregtest=0\n[test]\nregtest=1";
+    // equivalent to "-ai"
+    // regtest in ai section is ignored
+    const char* aiconf = "ai=1\nregtest=0\n[test]\nregtest=1";
     std::string error;
 
-    test_args.ParseParameters(0, (char**)argv_testnet, error);
+    test_args.ParseParameters(0, (char**)argv_ai, error);
     BOOST_CHECK_EQUAL(test_args.GetChainName(), "main");
 
-    test_args.ParseParameters(2, (char**)argv_testnet, error);
+    test_args.ParseParameters(2, (char**)argv_ai, error);
     BOOST_CHECK_EQUAL(test_args.GetChainName(), "test");
 
     test_args.ParseParameters(2, (char**)argv_regtest, error);
@@ -572,48 +572,48 @@ BOOST_AUTO_TEST_CASE(util_GetChainName)
     test_args.ParseParameters(3, (char**)argv_both, error);
     BOOST_CHECK_THROW(test_args.GetChainName(), std::runtime_error);
 
-    test_args.ParseParameters(0, (char**)argv_testnet, error);
-    test_args.ReadConfigString(testnetconf);
+    test_args.ParseParameters(0, (char**)argv_ai, error);
+    test_args.ReadConfigString(aiconf);
     BOOST_CHECK_EQUAL(test_args.GetChainName(), "test");
 
-    test_args.ParseParameters(2, (char**)argv_testnet, error);
-    test_args.ReadConfigString(testnetconf);
+    test_args.ParseParameters(2, (char**)argv_ai, error);
+    test_args.ReadConfigString(aiconf);
     BOOST_CHECK_EQUAL(test_args.GetChainName(), "test");
 
     test_args.ParseParameters(2, (char**)argv_regtest, error);
-    test_args.ReadConfigString(testnetconf);
+    test_args.ReadConfigString(aiconf);
     BOOST_CHECK_THROW(test_args.GetChainName(), std::runtime_error);
 
     test_args.ParseParameters(3, (char**)argv_test_no_reg, error);
-    test_args.ReadConfigString(testnetconf);
+    test_args.ReadConfigString(aiconf);
     BOOST_CHECK_EQUAL(test_args.GetChainName(), "test");
 
     test_args.ParseParameters(3, (char**)argv_both, error);
-    test_args.ReadConfigString(testnetconf);
+    test_args.ReadConfigString(aiconf);
     BOOST_CHECK_THROW(test_args.GetChainName(), std::runtime_error);
 
     // check setting the network to test (and thus making
     // [test] regtest=1 potentially relevant) doesn't break things
     test_args.SelectConfigNetwork("test");
 
-    test_args.ParseParameters(0, (char**)argv_testnet, error);
-    test_args.ReadConfigString(testnetconf);
+    test_args.ParseParameters(0, (char**)argv_ai, error);
+    test_args.ReadConfigString(aiconf);
     BOOST_CHECK_EQUAL(test_args.GetChainName(), "test");
 
-    test_args.ParseParameters(2, (char**)argv_testnet, error);
-    test_args.ReadConfigString(testnetconf);
+    test_args.ParseParameters(2, (char**)argv_ai, error);
+    test_args.ReadConfigString(aiconf);
     BOOST_CHECK_EQUAL(test_args.GetChainName(), "test");
 
     test_args.ParseParameters(2, (char**)argv_regtest, error);
-    test_args.ReadConfigString(testnetconf);
+    test_args.ReadConfigString(aiconf);
     BOOST_CHECK_THROW(test_args.GetChainName(), std::runtime_error);
 
     test_args.ParseParameters(2, (char**)argv_test_no_reg, error);
-    test_args.ReadConfigString(testnetconf);
+    test_args.ReadConfigString(aiconf);
     BOOST_CHECK_EQUAL(test_args.GetChainName(), "test");
 
     test_args.ParseParameters(3, (char**)argv_both, error);
-    test_args.ReadConfigString(testnetconf);
+    test_args.ReadConfigString(aiconf);
     BOOST_CHECK_THROW(test_args.GetChainName(), std::runtime_error);
 }
 

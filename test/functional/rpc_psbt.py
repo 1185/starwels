@@ -1,25 +1,25 @@
 #!/usr/bin/env python3
-# Copyright (c) 2018 The Bitcoin Core developers
+# Copyright (c) 2018 The Starwels developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test the Partially Signed Transaction RPCs.
 """
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import StarwelsTestFramework
 from test_framework.util import assert_equal, assert_raises_rpc_error, find_output
 
 import json
 import os
 
 # Create one-input, one-output, no-fee transaction:
-class PSBTTest(BitcoinTestFramework):
+class PSBTTest(StarwelsTestFramework):
 
     def set_test_params(self):
         self.setup_clean_chain = False
         self.num_nodes = 3
 
     def run_test(self):
-        # Create and fund a raw tx for sending 10 BTC
+        # Create and fund a raw tx for sending 10 MAI
         psbtx1 = self.nodes[0].walletcreatefundedpsbt([], {self.nodes[2].getnewaddress():10})['psbt']
 
         # Node 1 should not be able to add anything to it but still return the psbtx same as before

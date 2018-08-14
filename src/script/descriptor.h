@@ -1,9 +1,9 @@
-// Copyright (c) 2018 The Bitcoin Core developers
+// Copyright (c) 2018 The Starwels developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_SCRIPT_DESCRIPTOR_H
-#define BITCOIN_SCRIPT_DESCRIPTOR_H
+#ifndef STARWELS_SCRIPT_DESCRIPTOR_H
+#define STARWELS_SCRIPT_DESCRIPTOR_H
 
 #include <script/script.h>
 #include <script/sign.h>
@@ -98,5 +98,5 @@ struct Descriptor {
 /** Parse a descriptor string. Included private keys are put in out. Returns nullptr if parsing fails. */
 std::unique_ptr<Descriptor> Parse(const std::string& descriptor, FlatSigningProvider& out);
 
-#endif // BITCOIN_SCRIPT_DESCRIPTOR_H
+#endif // STARWELS_SCRIPT_DESCRIPTOR_H
 
