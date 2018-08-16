@@ -66,10 +66,10 @@ public:
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 210000;
         consensus.BIP16Height = 173805;
-        consensus.BIP34Height = 227931;
+        consensus.BIP34Height = 227931; // 00000000ac6a39893714f4240301f40abff1afcdcaf51d2f40ce6675a73f0961
         consensus.BIP34Hash = uint256S("0x00000000ac6a39893714f4240301f40abff1afcdcaf51d2f40ce6675a73f0961");
-        consensus.BIP65Height = 388381;
-        consensus.BIP66Height = 363725;
+        consensus.BIP65Height = 388381; // 000000003bad725a4d305cacb92e5854159238c6899b8241b8c7398b7da47336
+        consensus.BIP66Height = 363725; // 0000000013d266812076495e2f406e6840745b000b8c28dc94d20d4b910e5802
         consensus.powLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 2 * 24 * 84;
         consensus.nPowTargetSpacing = 2; // 2 second
@@ -164,7 +164,7 @@ public:
 };
 
 /**
- * Starwels Ai Main Network
+ * Starwels Ai Network
  */
 class CTestNetParams : public CChainParams {
 public:
@@ -172,10 +172,10 @@ public:
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 210000;
         consensus.BIP16Height = 173805;
-        consensus.BIP34Height = 227931;
+        consensus.BIP34Height = 227931; // 00000000ac6a39893714f4240301f40abff1afcdcaf51d2f40ce6675a73f0961
         consensus.BIP34Hash = uint256S("0x00000000ac6a39893714f4240301f40abff1afcdcaf51d2f40ce6675a73f0961");
-        consensus.BIP65Height = 388381;
-        consensus.BIP66Height = 363725;
+        consensus.BIP65Height = 388381; // 000000003bad725a4d305cacb92e5854159238c6899b8241b8c7398b7da47336
+        consensus.BIP66Height = 363725; // 0000000013d266812076495e2f406e6840745b000b8c28dc94d20d4b910e5802
         consensus.powLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 2 * 24 * 84;
         consensus.nPowTargetSpacing = 2; // 2 second
@@ -207,7 +207,7 @@ public:
         pchMessageStart[1] = 0xbe;
         pchMessageStart[2] = 0xb4;
         pchMessageStart[3] = 0xd9;
-        nDefaultPort = 8343;
+        nDefaultPort = 8333;
         nPruneAfterHeight = 100000;
 
         genesis = CreateGenesisBlock(1484870400, 2121032621, 0x1d00ffff, 1, 50 * COIN);
