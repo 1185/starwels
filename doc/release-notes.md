@@ -1,7 +1,4 @@
-(note: this is a temporary file, to be added-to by anybody, and moved to
-release-notes at release time)
-
-Starwels version *version* is now available from:
+Starwels version 0.17.0.1 is now available from:
 
   <https://github.com/starwels/starwels/releases>
 
@@ -16,7 +13,6 @@ To receive security and update notifications, please subscribe to:
 
   <https://bitcoincore.org/en/list/announcements/join/>
 
-How to Upgrade
 ==============
 
 If you are running an older version, shut it down. Wait until it has completely
@@ -249,24 +245,30 @@ available once caught up. When switching from running `-txindex` to running
 without the flag, the transaction index database will *not* be deleted
 automatically, meaning it could be turned back on at a later time without a full
 resync.
+=======
+Notable changes
+===============
 
-Miner block size removed
-------------------------
+An issue was solved with OSX dmg generation, affecting macOS 10.12 to 10.14,
+which could cause Finder to crash on install.
 
-The `-blockmaxsize` option for miners to limit their blocks' sizes was
-deprecated in V0.15.1, and has now been removed. Miners should use the
-`-blockmaxweight` option if they want to limit the weight of their blocks'
-weights.
+There are no significant changes for other operating systems.
 
-Python Support
---------------
+0.17.0.1 change log
+===================
 
-Support for Python 2 has been discontinued for all test files and tools.
+### Build system
+- #14416 `eb2cc84` Fix OSX dmg issue (10.12 to 10.14) (jonasschnelli)
+
+### Documentation
+- #14509 `1b5af2c` [0.17] doc: use SegWit in getblocktemplate example (Sjors)
 
 Credits
 =======
 
 Thanks to everyone who directly contributed to this release:
 
-
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bitcoin/).
+- Jonas Schnelli
+- Pieter Wuille
+- Sjors Provoost
+- Wladimir J. van der Laan
