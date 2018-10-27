@@ -1,4 +1,4 @@
-Starwels version *0.15.2* is now available from:
+Starwels version *0.15.x* is now available from:
 
   <https://github.com/starwels/starwels/releases>
 
@@ -58,14 +58,8 @@ frequently tested on them.
 Notable changes
 ===============
 
-Denial-of-Service vulnerability CVE-2018-17144
--------------------------------
+...
 
-A denial-of-service vulnerability exploitable by miners has been discovered in
-Starwels versions 0.14.0 up to 0.16.2. It is recommended to upgrade any of
-the vulnerable versions to 0.15.2 or 0.16.3 as soon as possible.
-
-0.15.2 Change log
 =================
 
 ### Build system
@@ -97,17 +91,15 @@ the vulnerable versions to 0.15.2 or 0.16.3 as soon as possible.
 - #11277 `1036c43` Add missing multiwallet rpc calls to python coverage logs (Russell Yanofsky)
 - #11277 `305f768` Limit AuthServiceProxyWrapper.\_\_getattr\_\_ wrapping (Russell Yanofsky)
 - #11277 `2eea279` Make AuthServiceProxy.\_batch method usable (Russell Yanofsky)
+=======
+0.15.x Change log
+=================
+
+...
 
 Credits
 =======
 
 Thanks to everyone who directly contributed to this release:
 
-- fanquake
-- Jonas Schnelli
-- Luke Dashjr
-- Matt Corallo
-- MeshCollider
-- Russell Yanofsky
-- Suhas Daftuar
-- Wladimir J. van der Laan
+...
