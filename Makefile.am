@@ -19,6 +19,7 @@ endif
 STARWELSD_BIN=$(top_builddir)/src/$(STARWELS_DAEMON_NAME)$(EXEEXT)
 STARWELS_QT_BIN=$(top_builddir)/src/qt/$(STARWELS_GUI_NAME)$(EXEEXT)
 STARWELS_CLI_BIN=$(top_builddir)/src/$(STARWELS_CLI_NAME)$(EXEEXT)
+STARWELS_TX_BIN=$(top_builddir)/src/$(STARWELS_TX_NAME)$(EXEEXT)
 STARWELS_WIN_INSTALLER=$(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
 
 empty :=
@@ -74,6 +75,7 @@ $(STARWELS_WIN_INSTALLER): all-recursive
 	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(STARWELSD_BIN) $(top_builddir)/release
 	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(STARWELS_QT_BIN) $(top_builddir)/release
 	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(STARWELS_CLI_BIN) $(top_builddir)/release
+	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(STARWELS_TX_BIN) $(top_builddir)/release
 	@test -f $(MAKENSIS) && $(MAKENSIS) -V2 $(top_builddir)/share/setup.nsi || \
 	  echo error: could not build $@
 	@echo built $@
@@ -84,7 +86,7 @@ $(OSX_APP)/Contents/PkgInfo:
 
 $(OSX_APP)/Contents/Resources/empty.lproj:
 	$(MKDIR_P) $(@D)
-	@touch $@ 
+	@touch $@
 
 $(OSX_APP)/Contents/Info.plist: $(OSX_PLIST)
 	$(MKDIR_P) $(@D)
@@ -165,6 +167,9 @@ $(STARWELSD_BIN): FORCE
 	$(MAKE) -C src $(@F)
 
 $(STARWELS_CLI_BIN): FORCE
+	$(MAKE) -C src $(@F)
+
+$(STARWELS_TX_BIN): FORCE
 	$(MAKE) -C src $(@F)
 
 if USE_LCOV
@@ -295,4 +300,3 @@ clean-docs:
 clean-local: clean-docs
 	rm -rf coverage_percent.txt test_starwels.coverage/ total.coverage/ test/tmp/ cache/ $(OSX_APP)
 	rm -rf test/functional/__pycache__ test/functional/test_framework/__pycache__ test/cache
-

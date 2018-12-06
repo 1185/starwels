@@ -1,4 +1,7 @@
-Starwels version 0.17.0.1 is now available from:
+(note: this is a temporary file, to be added-to by anybody, and moved to
+release-notes at release time)
+
+Starwels version 0.17.x is now available from:
 
   <https://github.com/starwels/starwels/releases>
 
@@ -13,6 +16,7 @@ To receive security and update notifications, please subscribe to:
 
   <https://bitcoincore.org/en/list/announcements/join/>
 
+How to Upgrade
 ==============
 
 If you are running an older version, shut it down. Wait until it has completely
@@ -20,7 +24,9 @@ shut down (which might take a few minutes for older versions), then run the
 installer (on Windows) or just copy over `/Applications/Starwels-Qt` (on Mac)
 or `starwelsd`/`starwels-qt` (on Linux).
 
-The first time you run version 0.15.0, your chainstate database will be converted to a
+If your node has a txindex, the txindex db will be migrated the first time you run 0.17.0 or newer, which may take up to a few hours. Your node will not be functional until this migration completes.
+
+The first time you run version 0.15.0 or newer, your chainstate database will be converted to a
 new format, which will take anywhere from a few minutes to half an hour,
 depending on the speed of your machine.
 
@@ -52,7 +58,6 @@ frequently tested on them.
 From 0.17.0 onwards macOS <10.10 is no longer supported. 0.17.0 is built using Qt 5.9.x, which doesn't
 support versions of macOS older than 10.10.
 
-Notable changes
 ===============
 
 Changed command-line options
@@ -246,29 +251,47 @@ without the flag, the transaction index database will *not* be deleted
 automatically, meaning it could be turned back on at a later time without a full
 resync.
 =======
+=======
+Known issues
+============
+
+...
+
 Notable changes
 ===============
 
-An issue was solved with OSX dmg generation, affecting macOS 10.12 to 10.14,
-which could cause Finder to crash on install.
+...
 
-There are no significant changes for other operating systems.
+0.17.x change log
+=================
 
-0.17.0.1 change log
-===================
+`listtransactions` label support
+--------------------------------
 
-### Build system
-- #14416 `eb2cc84` Fix OSX dmg issue (10.12 to 10.14) (jonasschnelli)
+The `listtransactions` RPC `account` parameter which was deprecated in 0.17.0
+and renamed to `dummy` has been un-deprecated and renamed again to `label`.
 
-### Documentation
-- #14509 `1b5af2c` [0.17] doc: use SegWit in getblocktemplate example (Sjors)
+When starwels is configured with the `-deprecatedrpc=accounts` setting, specifying
+a label/account/dummy argument will return both outgoing and incoming
+transactions. Without the `-deprecatedrpc=accounts` setting, it will only return
+incoming transactions (because it used to be possible to create transactions
+spending from specific accounts, but this is no longer possible with labels).
+
+When `-deprecatedrpc=accounts` is set, it's possible to pass the empty string ""
+to list transactions that don't have any label. Without
+`-deprecatedrpc=accounts`, passing the empty string is an error because returning
+only non-labeled transactions is not generally useful behavior and can cause
+confusion.
 
 Credits
 =======
 
 Thanks to everyone who directly contributed to this release:
 
-- Jonas Schnelli
-- Pieter Wuille
-- Sjors Provoost
-- Wladimir J. van der Laan
+...
+
+And to those that reported security issues:
+
+...
+
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bitcoin/).
