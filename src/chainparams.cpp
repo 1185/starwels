@@ -114,6 +114,13 @@ public:
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         vSeeds.emplace_back("127.0.0.1:43110/139H5wy8H3tgXwJ33mXpwmm4oCfjKUo7dY", true); // ZeroNet
+        /**
+        "zeroid.bit": {
+          "auth_address": "139H5wy8H3tgXwJ33mXpwmm4oCfjKUo7dY",
+          "auth_privatekey": "5JTywMxQgDZyFQEGoBLbSHazrLKhfZP3f4W8qQxtA1r3JXKCega",
+          "cert_sign": "HICD7py5jbnkZRRDSG8eavs6wI1MzHQHKd8MXczaMMZTUqFaYEA3i3aU/Ucgm7Epafj46gKopsj6YW1OGgw0Rv8="
+        }
+        */
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,0);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
