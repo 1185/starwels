@@ -1,6 +1,3 @@
-(note: this is a temporary file, to be added-to by anybody, and moved to
-release-notes at release time)
-
 Starwels version 0.17.x is now available from:
 
   <https://github.com/starwels/starwels/releases>
@@ -24,7 +21,9 @@ shut down (which might take a few minutes for older versions), then run the
 installer (on Windows) or just copy over `/Applications/Starwels-Qt` (on Mac)
 or `starwelsd`/`starwels-qt` (on Linux).
 
-If your node has a txindex, the txindex db will be migrated the first time you run 0.17.0 or newer, which may take up to a few hours. Your node will not be functional until this migration completes.
+If your node has a txindex, the txindex db will be migrated the first time you
+run 0.17.0 or newer, which may take up to a few hours. Your node will not be
+functional until this migration completes.
 
 The first time you run version 0.15.0 or newer, your chainstate database will be converted to a
 new format, which will take anywhere from a few minutes to half an hour,
@@ -58,46 +57,21 @@ frequently tested on them.
 From 0.17.0 onwards macOS <10.10 is no longer supported. 0.17.0 is built using Qt 5.9.x, which doesn't
 support versions of macOS older than 10.10.
 
-Known issues
-============
-
-...
-
 Notable changes
 ===============
 
-...
+(todo)
 
 0.17.x change log
 =================
 
-`listtransactions` label support
---------------------------------
-
-The `listtransactions` RPC `account` parameter which was deprecated in 0.17.0
-and renamed to `dummy` has been un-deprecated and renamed again to `label`.
-
-When starwels is configured with the `-deprecatedrpc=accounts` setting, specifying
-a label/account/dummy argument will return both outgoing and incoming
-transactions. Without the `-deprecatedrpc=accounts` setting, it will only return
-incoming transactions (because it used to be possible to create transactions
-spending from specific accounts, but this is no longer possible with labels).
-
-When `-deprecatedrpc=accounts` is set, it's possible to pass the empty string ""
-to list transactions that don't have any label. Without
-`-deprecatedrpc=accounts`, passing the empty string is an error because returning
-only non-labeled transactions is not generally useful behavior and can cause
-confusion.
+(todo)
 
 Credits
 =======
 
 Thanks to everyone who directly contributed to this release:
 
-...
-
-And to those that reported security issues:
-
-...
+(todo)
 
 As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bitcoin/).
