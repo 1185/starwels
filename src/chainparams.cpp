@@ -1,5 +1,5 @@
 // Copyright (c) 2010 Satoshi Nakamoto
-// Copyright (c) 2009-2016 The Starwels developers
+// Copyright (c) 2009-2019 The Starwels developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -66,8 +66,8 @@ public:
         consensus.nSubsidyHalvingInterval = 210000;
         consensus.BIP34Height = 227931;
         consensus.BIP34Hash = uint256S("0x00000000ac6a39893714f4240301f40abff1afcdcaf51d2f40ce6675a73f0961");
-        consensus.BIP65Height = 388381;
-        consensus.BIP66Height = 363725;
+        consensus.BIP65Height = 388381; // 0x000000003bad725a4d305cacb92e5854159238c6899b8241b8c7398b7da47336
+        consensus.BIP66Height = 363725; // 0x0000000013d266812076495e2f406e6840745b000b8c28dc94d20d4b910e5802
         consensus.powLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 2 * 24 * 84;
         consensus.nPowTargetSpacing = 2; // 2 second
@@ -136,26 +136,45 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                // 1517320634 1556464671 1517409431 704136802 1529914513 1155211149 1530100737 3507130640
+                // 1517320634 1556464671 1517409431 704136802 1529914513 1155211149
                 {1024, uint256S("0x00000000fb559851169e0d915093533d31af0d963e06a7d80a20496f9cfd2b9f")},
                 {2048, uint256S("0x00000000a753b360bb5d54908378d999132fbeb415279ef530b397ae249cbef4")},
                 {4096, uint256S("0x00000000d7674ad1e7703e7ba02b7611c12fe74de27b6a414cf6e906cc3599e9")},
+                // 1530100737 3507130640
                 {8192, uint256S("0x000000007039ae6930925c9c6297835642ea5a4d6f32cef2f6b84867e049fff8")},
-                // 1530115458 2127567142 1530157844 3201332445 1530240588 1199797262
+                                                                                                          {11111, uint256S("0x00000000f293b24e32076da179e26117328f717b5788ed6be61ac094ebfcc848")},
+                // 1530115458 2127567142 1530157844 3201332445
                 {16384, uint256S("0x00000000b6b20859ba118746cb4bbe4a52adbe504fceb2105092fd1b4234afc9")},
                 {32768, uint256S("0x00000000cc19cff47d676ad56594e695ac96a1d2781a83a5fd1a7702b98a9a65")},
+                                                                                                          {33333, uint256S("0x000000006e6325f0574ed633e957c054a68cf3cd31b65a5c63e3e76481f325a4")},
+                // 1530240588 1199797262
                 {65536, uint256S("0x00000000c6814c6715cda6f76b08b967abc0ea70aa3f8db8e8c62206477cb749")},
-                // 1530390152 555394614 1530692464 763374868 1531254946 2429180701
+                                                                                                          {74000, uint256S("0x00000000d19c2aac56911372d964a9e89845459869ffd1ee3910ab048d9faf5e")},
+                                                                                                          {105000, uint256S("0x00000000eca71f0c3abf5745144fd17e88593f36f433257b2a35a11f8561d7ce")},
+                // 1530390152 555394614
                 {131072, uint256S("0x00000000dbff9cae44489b3c02bbd556b67db5e3d21318c35cca0b6c361e6944")},
+                                                                                                          {134444, uint256S("0x000000001022357320b444edb994a291a02d0831bffcaefaf2ead58a2716f563")},
+                                                                                                          {168000, uint256S("0x0000000048908a1d941c28992d79deeff14e7312ac3969cf4950bd6129d577d6")},
+                                                                                                          {193000, uint256S("0x000000000c66a5ddbb94e334b6ade2cc01e1e27f676760df8bcde2b5195c2f2e")},
+                                                                                                          {210000, uint256S("0x0000000047a4fa17266bf33f228fcf370206fb1948096521efd1baf00f1e94d9")},
+                                                                                                          {216116, uint256S("0x000000005d7781fc151d19ead1757a69233f9cae16de1ee1ff97058617d7bf1f")},
+                                                                                                          {225430, uint256S("0x000000000b6ca8ef743c7681c3858dc1497e32530a1b9e319100c8dc46af233f")},
+                                                                                                          {250000, uint256S("0x0000000050818b5dde86d7fd8ffcd45e4cdc6e8b8fc49ec638629840d455c68f")},
+                // 1530692464 763374868
                 {262144, uint256S("0x00000000764077b29d13e1cb2484f028a24ef2a44486b6e5d3cb17eb4716c465")},
+                                                                                                          {279000, uint256S("0x000000002ef9de43b58ca79936d1f60021c18eb7b64f06662ebdeb5881b44652")},
+                                                                                                          {295000, uint256S("0x0000000095c429e9d8b947c3c25267adc31f98484b6b6034da600fa55802f41e")},
+                // 1531254946 2429180701 1532461464 3251947141 1535645986 3994357250
                 {524288, uint256S("0x000000000b53cc9d25e756bbabeb427632dd36339d268695d3ddf884317a1af7")},
+                {1048576, uint256S("0x0000000000005f2135fde2a7944711b3a4c94117737aef500618395226ea98f3")},
+                {2097152, uint256S("0x00000000001a462b7ab372ba813ef5bbbc84185d32bcc6d506ad749630f3187d")},
             }
         };
 
         chainTxData = ChainTxData{
-            // Data as of block 0000000000005f2135fde2a7944711b3a4c94117737aef500618395226ea98f3 (height 1048576).
-            1532461464, // * UNIX timestamp of last known number of transactions
-            1065174,       // * total number of transactions between genesis and that timestamp
+            // Data as of block 0x000000000006b154980f738a5d8359344f1c3c43fe0209da7b4033f379c3a413 (height 4194304).
+            1546793987, // * UNIX timestamp of last known number of transactions
+            4243099,     // * total number of transactions between genesis and that timestamp
                           //   (the tx=... number in the SetBestChain debug.log lines)
             3.1            // * estimated number of transactions per second after that timestamp
         };
@@ -172,8 +191,8 @@ public:
         consensus.nSubsidyHalvingInterval = 210000;
         consensus.BIP34Height = 227931;
         consensus.BIP34Hash = uint256S("0x00000000ac6a39893714f4240301f40abff1afcdcaf51d2f40ce6675a73f0961");
-        consensus.BIP65Height = 388381;
-        consensus.BIP66Height = 363725;
+        consensus.BIP65Height = 388381; // 0x000000003bad725a4d305cacb92e5854159238c6899b8241b8c7398b7da47336
+        consensus.BIP66Height = 363725; // 0x0000000013d266812076495e2f406e6840745b000b8c28dc94d20d4b910e5802
         consensus.powLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 2 * 24 * 84;
         consensus.nPowTargetSpacing = 2; // 2 second
@@ -239,7 +258,7 @@ public:
         };
 
         chainTxData = ChainTxData{
-            // Data as of block 00000000d7674ad1e7703e7ba02b7611c12fe74de27b6a414cf6e906cc3599e9 (height 4096).
+            // Data as of block 0x00000000d7674ad1e7703e7ba02b7611c12fe74de27b6a414cf6e906cc3599e9 (height 4096).
             1529914513,  // * UNIX timestamp of last known number of transactions
             4172,         // * total number of transactions between genesis and that timestamp
                            //   (the tx=... number in the SetBestChain debug.log lines)
