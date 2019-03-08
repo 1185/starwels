@@ -50,5 +50,6 @@ static const int MAX_URI_LENGTH = 255;
 #define QAPP_ORG_DOMAIN "bitcoin.org"
 #define QAPP_APP_NAME_DEFAULT "Starwels-Qt"
 #define QAPP_APP_NAME_AI "Starwels-Qt-ai"
+#define QAPP_APP_NAME_REGTEST "Starwels-Qt-regtest"
 
 #endif // STARWELS_QT_GUICONSTANTS_H
