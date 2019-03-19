@@ -1,4 +1,4 @@
-Starwels version *0.15.x* is now available from:
+Starwels version *0.15.3* is now available from:
 
   <https://github.com/starwels/starwels/releases>
 
@@ -92,7 +92,7 @@ Notable changes
 - #11277 `305f768` Limit AuthServiceProxyWrapper.\_\_getattr\_\_ wrapping (Russell Yanofsky)
 - #11277 `2eea279` Make AuthServiceProxy.\_batch method usable (Russell Yanofsky)
 =======
-0.15.x Change log
+0.15.3 Change log
 =================
 
 ...
