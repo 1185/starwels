@@ -17,9 +17,9 @@ StarwelsUnits::StarwelsUnits(QObject *parent):
 QList<StarwelsUnits::Unit> StarwelsUnits::availableUnits()
 {
     QList<StarwelsUnits::Unit> unitlist;
-    unitlist.append(MAI);
-    unitlist.append(mMAI);
-    unitlist.append(uMAI);
+    unitlist.append(USDH);
+    unitlist.append(mUSDH);
+    unitlist.append(uUSDH);
     return unitlist;
 }
 
@@ -27,9 +27,9 @@ bool StarwelsUnits::valid(int unit)
 {
     switch(unit)
     {
-    case MAI:
-    case mMAI:
-    case uMAI:
+    case USDH:
+    case mUSDH:
+    case uUSDH:
         return true;
     default:
         return false;
@@ -40,9 +40,9 @@ QString StarwelsUnits::longName(int unit)
 {
     switch(unit)
     {
-    case MAI: return QString("MAI");
-    case mMAI: return QString("mMAI");
-    case uMAI: return QString::fromUtf8("µMAI (bits)");
+    case USDH: return QString("USDH");
+    case mUSDH: return QString("mUSDH");
+    case uUSDH: return QString::fromUtf8("µUSDH (bits)");
     default: return QString("???");
     }
 }
@@ -51,7 +51,7 @@ QString StarwelsUnits::shortName(int unit)
 {
     switch(unit)
     {
-    case uMAI: return QString::fromUtf8("bits");
+    case uUSDH: return QString::fromUtf8("bits");
     default:   return longName(unit);
     }
 }
@@ -60,9 +60,9 @@ QString StarwelsUnits::description(int unit)
 {
     switch(unit)
     {
-    case MAI: return QString("Starwelss");
-    case mMAI: return QString("Milli-Starwelss (1 / 1" THIN_SP_UTF8 "000)");
-    case uMAI: return QString("Micro-Starwelss (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case USDH: return QString("Starwelss");
+    case mUSDH: return QString("Milli-Starwelss (1 / 1" THIN_SP_UTF8 "000)");
+    case uUSDH: return QString("Micro-Starwelss (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
 }
@@ -71,9 +71,9 @@ qint64 StarwelsUnits::factor(int unit)
 {
     switch(unit)
     {
-    case MAI:  return 100000000;
-    case mMAI: return 100000;
-    case uMAI: return 100;
+    case USDH:  return 100000000;
+    case mUSDH: return 100000;
+    case uUSDH: return 100;
     default:   return 100000000;
     }
 }
@@ -82,9 +82,9 @@ int StarwelsUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case MAI: return 8;
-    case mMAI: return 5;
-    case uMAI: return 2;
+    case USDH: return 8;
+    case mUSDH: return 5;
+    case uUSDH: return 2;
     default: return 0;
     }
 }

@@ -56,9 +56,9 @@ public:
      */
     enum Unit
     {
-        MAI,
-        mMAI,
-        uMAI
+        USDH,
+        mUSDH,
+        uUSDH
     };
 
     enum SeparatorStyle
