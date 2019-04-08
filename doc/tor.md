@@ -40,11 +40,11 @@ config file): *Needed for Tor version 0.2.7.0 and older versions of Tor only. Fo
 versions of Tor see [Section 3](#3-automatically-listen-on-tor).*
 
 	HiddenServiceDir /var/lib/tor/starwels-service/
-	HiddenServicePort 8343 127.0.0.1:8343
+	HiddenServicePort 43110 127.0.0.1:43110
 	HiddenServicePort 8333 127.0.0.1:8333
 
 The directory can be different of course, but (both) port numbers should be equal to
-your starwelsd's P2P listen port (8343 by default).
+your starwelsd's P2P listen port (43110 by default).
 
 	-externalip=X   You can tell starwels about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
@@ -79,7 +79,7 @@ as well, use `discover` instead:
 
 	./starwelsd ... -discover
 
-and open port 8343 on your firewall (or use -upnp).
+and open port 43110 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach .onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
