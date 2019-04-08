@@ -77,7 +77,7 @@ Bug fixes
 
 * Clicking on a starwels: URI on Windows should now launch Starwels-Qt properly.
 
-* When running -testnet, use RPC port 18342 by default.
+* When running -testnet, use RPC port 126552 by default.
 
 * Better detection and handling of corrupt wallet.dat and blkindex.dat files.
   Previous versions would crash with a DB_RUNRECOVERY exception, this
