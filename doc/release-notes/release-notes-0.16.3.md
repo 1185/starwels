@@ -1,4 +1,4 @@
-Starwels version 0.16.3 is now available from:
+Starwels version 0.16.4 is now available from:
 
   <https://github.com/starwels/starwels/releases>
 
@@ -53,9 +53,9 @@ Denial-of-Service vulnerability
 
 A denial-of-service vulnerability (CVE-2018-17144) exploitable by miners has
 been discovered in Starwels versions 0.14.0 up to 0.16.2. It is recommended
-to upgrade any of the vulnerable versions to 0.16.3 as soon as possible.
+to upgrade any of the vulnerable versions to 0.16.4 as soon as possible.
 
-0.16.3 change log
+0.16.4 change log
 ------------------
 
 ### Consensus

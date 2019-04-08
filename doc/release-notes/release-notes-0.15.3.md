@@ -63,7 +63,7 @@ Denial-of-Service vulnerability CVE-2018-17144
 
 A denial-of-service vulnerability exploitable by miners has been discovered in
 Starwels versions 0.14.0 up to 0.16.2. It is recommended to upgrade any of
-the vulnerable versions to 0.15.3 or 0.16.3 as soon as possible.
+the vulnerable versions to 0.15.3 or 0.16.4 as soon as possible.
 
 0.15.3 Change log
 =================
