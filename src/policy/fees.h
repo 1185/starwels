@@ -1,5 +1,5 @@
-// Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2017 The Starwels developers
+// Copyright (c) 2009-2019 Satoshi Nakamoto
+// Copyright (c) 2009-2019 The Starwels developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef STARWELS_POLICYESTIMATOR_H

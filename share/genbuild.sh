@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright (c) 2012-2016 The Starwels developers
+# Copyright (c) 2012-2019 The Starwels developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 

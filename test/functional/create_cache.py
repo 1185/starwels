@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2016-2017 The Starwels developers
+# Copyright (c) 2016-2019 The Starwels developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Create a blockchain cache.

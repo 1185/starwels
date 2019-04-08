@@ -5,7 +5,7 @@ Upstream-Contact: Satoshi Nakamoto <satoshin@gmx.com>
 Source: https://github.com/starwels/starwels
 
 Files: *
-Copyright: 2009-2018, Starwels Developers
+Copyright: 2009-2019, Starwels Developers
 License: Expat
 Comment: The Starwels Developers encompasses the current developers listed on github.com/starwels,
          as well as the numerous contributors to the project.
