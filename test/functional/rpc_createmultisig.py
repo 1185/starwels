@@ -25,7 +25,7 @@ class RpcCreateMultiSigTest(StarwelsTestFramework):
     def run_test(self):
         node0,node1,node2 = self.nodes
 
-        # 50 MAI each, rest will be 25 MAI each
+        # 50 USDH each, rest will be 25 USDH each
         node0.generate(149)
         self.sync_all()
 

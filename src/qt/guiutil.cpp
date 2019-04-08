@@ -165,7 +165,7 @@ bool parseStarwelsURI(const QUrl &uri, SendCoinsRecipient *out)
         {
             if(!i->second.isEmpty())
             {
-                if(!StarwelsUnits::parse(StarwelsUnits::MAI, i->second, &rv.amount))
+                if(!StarwelsUnits::parse(StarwelsUnits::USDH, i->second, &rv.amount))
                 {
                     return false;
                 }
@@ -196,7 +196,7 @@ QString formatStarwelsURI(const SendCoinsRecipient &info)
 
     if (info.amount)
     {
-        ret += QString("?amount=%1").arg(StarwelsUnits::format(StarwelsUnits::MAI, info.amount, false, StarwelsUnits::separatorNever));
+        ret += QString("?amount=%1").arg(StarwelsUnits::format(StarwelsUnits::USDH, info.amount, false, StarwelsUnits::separatorNever));
         paramCount++;
     }
 

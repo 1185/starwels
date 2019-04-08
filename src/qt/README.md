@@ -60,7 +60,7 @@ Represents the view to a single wallet.
 
 * UI elements like StarwelsAmountField, which inherit from QWidget.
 * `starwelsstrings.cpp`: automatically generated
-* `starwelsunits.(h/cpp)`: MAI / mMAI / etc handling
+* `starwelsunits.(h/cpp)`: USDH / mUSDH / etc handling
 * `callback.h`
 * `guiconstants.h`: UI colors, app name, etc
 * `guiutil.h`: several helper functions
